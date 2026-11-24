@@ -1,0 +1,58 @@
+{
+  "model": "gemma-2-2b-it",
+  "ell1": 23,
+  "k_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "k_max": 6,
+  "compensation_frac": [
+    1.2727,
+    1.2135,
+    1.2088,
+    1.3589,
+    1.2807,
+    0.0
+  ],
+  "suppression_frac": [
+    0.8847,
+    0.8348,
+    0.3821,
+    0.3767,
+    0.3217,
+    0.0
+  ],
+  "random_suppression_frac": [
+    1.0184,
+    0.981,
+    0.9861,
+    0.9558,
+    0.99,
+    1.0366
+  ],
+  "matched_suppression_frac": [
+    0.9965,
+    0.9143,
+    1.0277,
+    0.9906,
+    1.0156,
+    0.9814
+  ],
+  "compensation_peak_k": 4,
+  "compensation_peak_value": 1.359,
+  "collapse_k": 6,
+  "random_still_rebuilds_at_kmax": true,
+  "gold_asr": [
+    38.72,
+    39.83,
+    36.9,
+    30.43,
+    30.55,
+    23.46
+  ],
+  "jailbreak_knee_k": 6
+}

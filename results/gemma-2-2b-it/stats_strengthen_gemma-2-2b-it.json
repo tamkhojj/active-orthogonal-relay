@@ -1,0 +1,48 @@
+{
+  "model": "gemma-2-2b-it",
+  "peak": 11,
+  "basin": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "permutation": {
+    "n_perms": 10000,
+    "obs_0p_r2_exp": 0.9765,
+    "perm_0p_r2_mean": -3.0736,
+    "perm_0p_r2_p95": -0.4477,
+    "perm_p_val_0p": 0.0001,
+    "obs_1p_r2_exp": 0.9901,
+    "perm_1p_r2_mean": -0.1642,
+    "perm_p_val_1p": 0.0001,
+    "obs_velocity_cv": 0.0979,
+    "perm_velocity_cv_mean": 0.2604
+  },
+  "exp10_ci": {
+    "e3_writes": {
+      "asr": 38.51,
+      "lo": 33.55,
+      "hi": 44.05,
+      "nr": 78.0
+    },
+    "e1_incoming": {
+      "asr": 2.93,
+      "lo": 1.45,
+      "hi": 4.8,
+      "nr": 6.67
+    },
+    "e3_vs_e1": {
+      "diff_pts": 35.58,
+      "ci_lo": 29.94,
+      "ci_hi": 41.17,
+      "p_val": 0.0
+    }
+  }
+}

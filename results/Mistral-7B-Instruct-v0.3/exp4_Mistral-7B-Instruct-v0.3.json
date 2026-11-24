@@ -1,0 +1,58 @@
+{
+  "model": "Mistral-7B-Instruct-v0.3",
+  "ell1": 29,
+  "k_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "k_max": 6,
+  "compensation_frac": [
+    1.3093,
+    1.1586,
+    1.3478,
+    0.8719,
+    4.6872,
+    0.0
+  ],
+  "suppression_frac": [
+    1.0148,
+    0.3806,
+    0.3186,
+    0.1735,
+    0.0869,
+    0.0
+  ],
+  "random_suppression_frac": [
+    1.0038,
+    1.0112,
+    0.9995,
+    1.013,
+    1.0102,
+    0.9985
+  ],
+  "matched_suppression_frac": [
+    0.988,
+    0.973,
+    1.0169,
+    1.0014,
+    1.0226,
+    0.9923
+  ],
+  "compensation_peak_k": 5,
+  "compensation_peak_value": 4.687,
+  "collapse_k": 5,
+  "random_still_rebuilds_at_kmax": true,
+  "gold_asr": [
+    38.58,
+    41.03,
+    49.6,
+    47.68,
+    43.64,
+    40.58
+  ],
+  "jailbreak_knee_k": 2
+}

@@ -1,0 +1,48 @@
+{
+  "model": "Qwen2-7B-Instruct",
+  "peak": 15,
+  "basin": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "permutation": {
+    "n_perms": 10000,
+    "obs_0p_r2_exp": 0.9687,
+    "perm_0p_r2_mean": -1.6066,
+    "perm_0p_r2_p95": 0.0421,
+    "perm_p_val_0p": 0.0001,
+    "obs_1p_r2_exp": 0.9694,
+    "perm_1p_r2_mean": -0.2481,
+    "perm_p_val_1p": 0.0001,
+    "obs_velocity_cv": 0.1648,
+    "perm_velocity_cv_mean": 0.2364
+  },
+  "exp10_ci": {
+    "e3_writes": {
+      "asr": 53.02,
+      "lo": 47.97,
+      "hi": 57.78,
+      "nr": 98.0
+    },
+    "e1_incoming": {
+      "asr": 26.78,
+      "lo": 21.58,
+      "hi": 32.12,
+      "nr": 53.33
+    },
+    "e3_vs_e1": {
+      "diff_pts": 26.25,
+      "ci_lo": 20.43,
+      "ci_hi": 32.43,
+      "p_val": 0.0
+    }
+  }
+}

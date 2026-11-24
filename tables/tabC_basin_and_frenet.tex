@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Model} & \textbf{Peak / Basin} & \textbf{IoU} & \textbf{$\bar{\kappa}$ (CV)} & \textbf{$\bar{\tau}$} & \textbf{0p $R^2$ (Geo / Exp)} & \textbf{1p $R^2$ (Exp, $p$)} & \textbf{SVD SR} & \textbf{Recon (Flat $\to$ Tor.)} \\
+\midrule
+Gemma-2-2B & L11 [11..20] & 0.769 & 0.602 (0.10) & 0.9946 & -6.15 / 0.977 & 0.990 ($<.001$) & 1.73 & 0.628 $\to$ 0.424 \\
+Llama-3-8B & L11 [7..25] & 0.789 & 0.585 (0.29) & 0.9959 & -7.14 / 0.835 & 0.924 ($<.001$) & 2.11 & 0.877 $\to$ 0.709 \\
+Llama-3.1-8B & L11 [7..25] & 0.842 & 0.618 (0.34) & 0.9960 & -6.69 / 0.717 & 0.939 ($<.001$) & 2.15 & 0.910 $\to$ 0.751 \\
+Qwen2-7B & L15 [13..22] & 0.700 & 0.663 (0.16) & 0.9970 & -7.82 / 0.969 & 0.969 ($<.001$) & 1.83 & 0.718 $\to$ 0.502 \\
+Qwen2.5-3B & L22 [18..28] & 0.727 & 0.674 (0.15) & 0.9823 & -24.41 / 0.747 & 0.861 ($<.001$) & 1.78 & 0.693 $\to$ 0.495 \\
+Qwen2.5-7B & L15 [12..22] & 0.636 & 0.691 (0.17) & 0.9929 & -11.42 / 0.916 & 0.947 ($<.001$) & 1.88 & 0.779 $\to$ 0.542 \\
+Mistral-7B & L11 [8..25] & 1.000 & 0.512 (0.30) & 0.9979 & -7.56 / 0.701 & 0.874 ($<.001$) & 1.82 & 0.778 $\to$ 0.647 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix C: Automated Causal Basin localization and discrete Frenet--Serret geometry (Exp5a).} Across all 7 models, behavioral and geometric basins strongly overlap ($\mathrm{IoU}{=}0.636\text{--}1.000$), torsion approaches unity ($\bar{\tau}{=}0.982\text{--}0.998$), and zero-parameter orthogonal drift $(\cos\bar{\kappa})^m$ decisively outperforms planar geodesic rotation $\cos(m\bar{\kappa})$ ($p{<}0.001$).}
+\label{tab:appC_basin_frenet}
+\end{table*}

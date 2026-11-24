@@ -1,0 +1,57 @@
+{
+  "model": "Llama-3.1-8B-Instruct",
+  "peak": 11,
+  "basin": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "permutation": {
+    "n_perms": 10000,
+    "obs_0p_r2_exp": 0.7165,
+    "perm_0p_r2_mean": -1.2661,
+    "perm_0p_r2_p95": 0.208,
+    "perm_p_val_0p": 0.0004,
+    "obs_1p_r2_exp": 0.9393,
+    "perm_1p_r2_mean": -0.3827,
+    "perm_p_val_1p": 0.0001,
+    "obs_velocity_cv": 0.3445,
+    "perm_velocity_cv_mean": 0.2845
+  },
+  "exp10_ci": {
+    "e3_writes": {
+      "asr": 33.82,
+      "lo": 28.71,
+      "hi": 38.99,
+      "nr": 32.67
+    },
+    "e1_incoming": {
+      "asr": 0.52,
+      "lo": 0.1,
+      "hi": 1.22,
+      "nr": 2.0
+    },
+    "e3_vs_e1": {
+      "diff_pts": 33.3,
+      "ci_lo": 28.23,
+      "ci_hi": 38.78,
+      "p_val": 0.0
+    }
+  }
+}

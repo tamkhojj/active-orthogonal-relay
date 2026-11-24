@@ -1,0 +1,90 @@
+{
+  "model": "Qwen2.5-3B-Instruct",
+  "peak": 22,
+  "basin": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "basin_ds": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "benchmarks": {
+    "strongreject": {
+      "n": 150,
+      "overlap_with_train": 0,
+      "source": "aor/data/processed/strongreject.json",
+      "BASELINE": {
+        "asr": 12.28,
+        "lo": 9.14,
+        "hi": 15.45,
+        "n": 150,
+        "bin_asr": 8.67,
+        "bin_lo": 4.0,
+        "bin_hi": 13.33,
+        "non_refusal_asr": 46.67,
+        "non_refusal_lo": 38.67,
+        "non_refusal_hi": 54.67
+      },
+      "ABL_E3_WRITES": {
+        "asr": 52.53,
+        "lo": 48.26,
+        "hi": 56.78,
+        "n": 150,
+        "bin_asr": 58.67,
+        "bin_lo": 50.67,
+        "bin_hi": 66.67,
+        "non_refusal_asr": 99.33,
+        "non_refusal_lo": 97.33,
+        "non_refusal_hi": 100.0
+      }
+    },
+    "jailbreakbench": {
+      "n": 100,
+      "overlap_with_train": 1,
+      "source": "aor/data/processed/jailbreakbench.json",
+      "BASELINE": {
+        "asr": 10.69,
+        "lo": 6.91,
+        "hi": 15.35,
+        "n": 100,
+        "bin_asr": 7.0,
+        "bin_lo": 3.0,
+        "bin_hi": 13.0,
+        "non_refusal_asr": 23.0,
+        "non_refusal_lo": 15.0,
+        "non_refusal_hi": 32.0
+      },
+      "ABL_E3_WRITES": {
+        "asr": 56.0,
+        "lo": 50.08,
+        "hi": 61.92,
+        "n": 100,
+        "bin_asr": 56.0,
+        "bin_lo": 46.0,
+        "bin_hi": 66.0,
+        "non_refusal_asr": 100.0,
+        "non_refusal_lo": 100.0,
+        "non_refusal_hi": 100.0
+      }
+    }
+  }
+}

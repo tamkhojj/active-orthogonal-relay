@@ -1,0 +1,56 @@
+{
+  "model": "Mistral-7B-Instruct-v0.3",
+  "peak": 11,
+  "basin": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "permutation": {
+    "n_perms": 10000,
+    "obs_0p_r2_exp": 0.7007,
+    "perm_0p_r2_mean": -2.5551,
+    "perm_0p_r2_p95": -0.3726,
+    "perm_p_val_0p": 0.0001,
+    "obs_1p_r2_exp": 0.8735,
+    "perm_1p_r2_mean": -0.5465,
+    "perm_p_val_1p": 0.0001,
+    "obs_velocity_cv": 0.3041,
+    "perm_velocity_cv_mean": 0.3118
+  },
+  "exp10_ci": {
+    "e3_writes": {
+      "asr": 52.59,
+      "lo": 47.75,
+      "hi": 57.57,
+      "nr": 91.33
+    },
+    "e1_incoming": {
+      "asr": 48.91,
+      "lo": 44.02,
+      "hi": 53.8,
+      "nr": 90.67
+    },
+    "e3_vs_e1": {
+      "diff_pts": 3.68,
+      "ci_lo": 0.25,
+      "ci_hi": 7.23,
+      "p_val": 0.033
+    }
+  }
+}

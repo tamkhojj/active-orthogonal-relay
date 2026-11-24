@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying paper."
+title: "Refusal as an Active Orthogonal Relay: Disentangling Causal Innovation Circuits from High-Dimensional Trajectory Drift"
+authors:
+  - family-names: "Anonymous"
+version: 1.0.0
+date-released: 2026-11-24
+license: MIT

@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.2pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccccc}
+\toprule
+\textbf{Model} & \textbf{Strategy ($k{=}2$)} & \multicolumn{4}{c}{\textbf{Sublayer `writes`}} & \multicolumn{4}{c}{\textbf{Residual Stream `full\_resid`}} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+ & & SR\% & KL & CE & TQA MC1 & SR\% & KL & CE & TQA MC1 \\
+\midrule
+\multirow{4}{*}{Gemma-2-2B} & Static Global & 34.6 & 0.10 & 0.398 & 39.9 & 44.6 & 0.28 & 0.617 & 35.6 \\
+ & Static Basin & 6.5 & 0.03 & 0.363 & 42.2 & 50.3 & 0.21 & 0.559 & 36.4 \\
+ & Torsion Transport & 30.2 & 0.12 & 0.368 & 41.2 & 6.8 & 2.10 & 0.934 & 36.0 \\
+ & \textbf{Per-Layer Basin} & 46.4 & 0.18 & 0.376 & 41.4 & 3.3 & 2.44 & 1.434 & 33.2 \\
+\midrule
+\multirow{4}{*}{Llama-3-8B} & Static Global & 39.7 & 0.15 & 0.204 & 36.2 & 40.0 & 0.15 & 0.204 & 36.6 \\
+ & Static Basin & 52.3 & 0.05 & 0.175 & 36.1 & 43.1 & 0.14 & 0.201 & 36.8 \\
+ & Torsion Transport & 53.4 & 0.10 & 0.194 & 35.5 & 59.3 & 0.31 & 0.304 & 35.2 \\
+ & \textbf{Per-Layer Basin} & 65.3 & 0.15 & 0.209 & 36.0 & 44.6 & 0.53 & 0.434 & 35.1 \\
+\midrule
+\multirow{4}{*}{Llama-3.1-8B} & Static Global & 28.1 & 0.24 & 0.300 & 37.3 & 29.6 & 0.25 & 0.301 & 37.5 \\
+ & Static Basin & 15.9 & 0.06 & 0.228 & 37.3 & 27.8 & 0.23 & 0.292 & 37.3 \\
+ & Torsion Transport & 17.1 & 0.19 & 0.257 & 36.7 & 39.1 & 0.81 & 0.467 & 36.0 \\
+ & \textbf{Per-Layer Basin} & 50.4 & 0.42 & 0.279 & 37.7 & 11.2 & 3.85 & 0.800 & 38.6 \\
+\midrule
+\multirow{4}{*}{Qwen2.5-7B} & Static Global & 71.4 & 0.85 & 0.852 & 31.2 & 71.5 & 0.86 & 0.855 & 31.2 \\
+ & Static Basin & 58.9 & 0.05 & 0.308 & 43.6 & 72.9 & 0.72 & 0.759 & 31.3 \\
+ & Torsion Transport & 45.5 & 0.10 & 0.310 & 43.7 & 70.4 & 2.04 & 1.315 & 32.7 \\
+ & \textbf{Per-Layer Basin} & 58.7 & 0.10 & 0.295 & 43.0 & 24.4 & 1.74 & 1.091 & 38.3 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix H.1: Apples-to-apples comparison of `writes` vs.\ `full\_resid` ablation (Exp9 P1, $n_{\mathrm{train}}{=}256$, no system prompt).} Under high-torsion rotation, Per-Layer Basin ($k{=}2$) on `full\_resid` collapses on 4/4 models (Benign KL inflates $3.6\text{--}17.4\times$), confirming the Torsion--Collateral Tradeoff.}
+\label{tab:appH1_p1}
+\end{table*}

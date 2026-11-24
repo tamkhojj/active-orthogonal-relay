@@ -1,0 +1,88 @@
+{
+  "model": "gemma-2-2b-it",
+  "peak": 11,
+  "basin": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "basin_ds": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "benchmarks": {
+    "strongreject": {
+      "n": 150,
+      "overlap_with_train": 0,
+      "source": "aor/data/processed/strongreject.json",
+      "BASELINE": {
+        "asr": 0.99,
+        "lo": 0.45,
+        "hi": 1.71,
+        "n": 150,
+        "bin_asr": 0.0,
+        "bin_lo": 0.0,
+        "bin_hi": 0.0,
+        "non_refusal_asr": 12.0,
+        "non_refusal_lo": 7.33,
+        "non_refusal_hi": 17.33
+      },
+      "ABL_E3_WRITES": {
+        "asr": 18.71,
+        "lo": 14.44,
+        "hi": 23.14,
+        "n": 150,
+        "bin_asr": 18.67,
+        "bin_lo": 12.67,
+        "bin_hi": 24.67,
+        "non_refusal_asr": 88.67,
+        "non_refusal_lo": 83.33,
+        "non_refusal_hi": 93.33
+      }
+    },
+    "jailbreakbench": {
+      "n": 100,
+      "overlap_with_train": 1,
+      "source": "aor/data/processed/jailbreakbench.json",
+      "BASELINE": {
+        "asr": 2.24,
+        "lo": 0.59,
+        "hi": 4.46,
+        "n": 100,
+        "bin_asr": 2.0,
+        "bin_lo": 0.0,
+        "bin_hi": 5.0,
+        "non_refusal_asr": 2.0,
+        "non_refusal_lo": 0.0,
+        "non_refusal_hi": 5.0
+      },
+      "ABL_E3_WRITES": {
+        "asr": 42.71,
+        "lo": 36.16,
+        "hi": 48.92,
+        "n": 100,
+        "bin_asr": 45.0,
+        "bin_lo": 36.0,
+        "bin_hi": 55.0,
+        "non_refusal_asr": 80.0,
+        "non_refusal_lo": 72.0,
+        "non_refusal_hi": 87.0
+      }
+    }
+  }
+}

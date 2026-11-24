@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "active-orthogonal-relay"
+version = "1.0.0"
+description = "Refusal as an Active Orthogonal Relay: non-circular geometric and causal auditing of LLM refusal."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Anonymous" }]
+keywords = ["mechanistic-interpretability", "llm-safety", "refusal", "representation-engineering"]
+dependencies = [
+    "torch>=2.1",
+    "transformers>=4.44",
+    "accelerate>=0.30",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "datasets>=2.18",
+    "sentencepiece>=0.1.99",
+    "protobuf>=3.20",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools]
+packages = ["aor", "aor.interp", "aor.experiments", "aor.plot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

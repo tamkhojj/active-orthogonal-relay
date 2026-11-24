@@ -1,0 +1,18 @@
+# Core
+torch>=2.1
+transformers>=4.44
+accelerate>=0.30
+numpy>=1.24
+matplotlib>=3.7
+
+# Dataset loading (TruthfulQA, XSTest, benchmark splits)
+datasets>=2.18
+
+# Tokenizers for Gemma / Llama / Qwen / Mistral
+sentencepiece>=0.1.99
+protobuf>=3.20
+
+# StrongREJECT fine-tuned evaluator (open-weight judge).
+# Install from source if not available on PyPI:
+#   pip install "strong_reject @ git+https://github.com/alexandrasouly/strongreject.git"
+strong_reject

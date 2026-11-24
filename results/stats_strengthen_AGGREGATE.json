@@ -1,0 +1,133 @@
+{
+  "alpha": 0.05,
+  "holm": {
+    "Gemma-2-2B": {
+      "name": "Gemma-2-2B",
+      "p_raw": 0.0001,
+      "p_holm": 0.0007,
+      "reject": true
+    },
+    "Llama-3-8B": {
+      "name": "Llama-3-8B",
+      "p_raw": 0.0001,
+      "p_holm": 0.0007,
+      "reject": true
+    },
+    "Llama-3.1-8B": {
+      "name": "Llama-3.1-8B",
+      "p_raw": 0.0004,
+      "p_holm": 0.0007,
+      "reject": true
+    },
+    "Qwen2-7B": {
+      "name": "Qwen2-7B",
+      "p_raw": 0.0001,
+      "p_holm": 0.0007,
+      "reject": true
+    },
+    "Qwen2.5-3B": {
+      "name": "Qwen2.5-3B",
+      "p_raw": 0.0002,
+      "p_holm": 0.0007,
+      "reject": true
+    },
+    "Qwen2.5-7B": {
+      "name": "Qwen2.5-7B",
+      "p_raw": 0.0001,
+      "p_holm": 0.0007,
+      "reject": true
+    },
+    "Mistral-7B": {
+      "name": "Mistral-7B",
+      "p_raw": 0.0001,
+      "p_holm": 0.0007,
+      "reject": true
+    }
+  },
+  "per_model": {
+    "Gemma-2-2B": {
+      "n_perms": 10000,
+      "obs_0p_r2_exp": 0.9765,
+      "perm_0p_r2_mean": -3.0736,
+      "perm_0p_r2_p95": -0.4477,
+      "perm_p_val_0p": 0.0001,
+      "obs_1p_r2_exp": 0.9901,
+      "perm_1p_r2_mean": -0.1642,
+      "perm_p_val_1p": 0.0001,
+      "obs_velocity_cv": 0.0979,
+      "perm_velocity_cv_mean": 0.2604
+    },
+    "Llama-3-8B": {
+      "n_perms": 10000,
+      "obs_0p_r2_exp": 0.8345,
+      "perm_0p_r2_mean": -1.546,
+      "perm_0p_r2_p95": -0.0295,
+      "perm_p_val_0p": 0.0001,
+      "obs_1p_r2_exp": 0.9241,
+      "perm_1p_r2_mean": -0.4814,
+      "perm_p_val_1p": 0.0001,
+      "obs_velocity_cv": 0.2949,
+      "perm_velocity_cv_mean": 0.2809
+    },
+    "Llama-3.1-8B": {
+      "n_perms": 10000,
+      "obs_0p_r2_exp": 0.7165,
+      "perm_0p_r2_mean": -1.2661,
+      "perm_0p_r2_p95": 0.208,
+      "perm_p_val_0p": 0.0004,
+      "obs_1p_r2_exp": 0.9393,
+      "perm_1p_r2_mean": -0.3827,
+      "perm_p_val_1p": 0.0001,
+      "obs_velocity_cv": 0.3445,
+      "perm_velocity_cv_mean": 0.2845
+    },
+    "Qwen2-7B": {
+      "n_perms": 10000,
+      "obs_0p_r2_exp": 0.9687,
+      "perm_0p_r2_mean": -1.6066,
+      "perm_0p_r2_p95": 0.0421,
+      "perm_p_val_0p": 0.0001,
+      "obs_1p_r2_exp": 0.9694,
+      "perm_1p_r2_mean": -0.2481,
+      "perm_p_val_1p": 0.0001,
+      "obs_velocity_cv": 0.1648,
+      "perm_velocity_cv_mean": 0.2364
+    },
+    "Qwen2.5-3B": {
+      "n_perms": 10000,
+      "obs_0p_r2_exp": 0.7472,
+      "perm_0p_r2_mean": -2.2515,
+      "perm_0p_r2_p95": -0.3214,
+      "perm_p_val_0p": 0.0002,
+      "obs_1p_r2_exp": 0.8611,
+      "perm_1p_r2_mean": -0.1805,
+      "perm_p_val_1p": 0.0011,
+      "obs_velocity_cv": 0.1489,
+      "perm_velocity_cv_mean": 0.2085
+    },
+    "Qwen2.5-7B": {
+      "n_perms": 10000,
+      "obs_0p_r2_exp": 0.9157,
+      "perm_0p_r2_mean": -1.7467,
+      "perm_0p_r2_p95": -0.0004,
+      "perm_p_val_0p": 0.0001,
+      "obs_1p_r2_exp": 0.9473,
+      "perm_1p_r2_mean": -0.2369,
+      "perm_p_val_1p": 0.0001,
+      "obs_velocity_cv": 0.1743,
+      "perm_velocity_cv_mean": 0.2168
+    },
+    "Mistral-7B": {
+      "n_perms": 10000,
+      "obs_0p_r2_exp": 0.7007,
+      "perm_0p_r2_mean": -2.5551,
+      "perm_0p_r2_p95": -0.3726,
+      "perm_p_val_0p": 0.0001,
+      "obs_1p_r2_exp": 0.8735,
+      "perm_1p_r2_mean": -0.5465,
+      "perm_p_val_1p": 0.0001,
+      "obs_velocity_cv": 0.3041,
+      "perm_velocity_cv_mean": 0.3118
+    }
+  }
+}

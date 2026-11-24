@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{Ref. Clean} & \textbf{Ref. Relay} & \textbf{Fmt. $d'$ / $|\cos|$} & \textbf{Fmt. Relay} & \textbf{Tru. $d'$ / $|\cos|$} & \textbf{Tru. Relay} & \textbf{Null Clean / Relay} \\
+ & $\cos^2$ (iso / cov) & $s$, $\|\Delta m\|$ & (Native Basin) & RefB / NatB ($\cos^2$) & (Native Basin) & RefB / NatB ($\cos^2$) & $\|\Delta m\|$, cov-$\times$ \\
+\midrule
+Gemma-2-2B & 0.765 (1699 / 23.2$\times$) & -0.83, 1.44 & 22.4 / 0.042 & 0.005 / 0.255 & 1.64 / 0.222 & 0.058 / 0.046 & 0.46$\times$ / 0.15 (7.7$\times$) \\
+Llama-3-8B & 0.686 (2859 / 54.4$\times$) & -0.60, 0.85 & 32.7 / 0.086 & 0.021 / 0.058 & 1.74 / 0.130 & 0.016 / 0.016 & 0.32$\times$ / 0.15 (4.2$\times$) \\
+Llama-3.1-8B & 0.759 (3161 / 31.2$\times$) & -0.54, 2.39 & 27.6 / 0.113 & 0.020 / 0.096 & 1.82 / 0.090 & 0.044 / 0.061 & 0.40$\times$ / 0.22 (4.0$\times$) \\
+Qwen2-7B & 0.872 (3006 / 81.3$\times$) & -0.89, 24.39 & 35.0 / 0.056 & 0.036 / 0.150 & 1.63 / 0.161 & 0.055 / 0.061 & 0.69$\times$ / 5.31 (6.7$\times$) \\
+Qwen2.5-3B & 0.818 (1573 / 25.8$\times$) & -0.85, 16.16 & 37.0 / 0.075 & 0.080 / 0.155 & 1.45 / 0.150 & 0.038 / 0.042 & 0.44$\times$ / 3.39 (7.9$\times$) \\
+Qwen2.5-7B & 0.832 (2973 / 48.9$\times$) & -0.65, 10.02 & 52.2 / 0.064 & 0.012 / 0.175 & 1.71 / 0.189 & 0.028 / 0.028 & 0.39$\times$ / 5.46 (5.6$\times$) \\
+Mistral-7B & 0.754 (3142 / 38.5$\times$) & -0.59, 0.69 & 26.1 / 0.023 & 0.056 / 0.238 & 1.82 / 0.217 & 0.063 / 0.101 & 0.44$\times$ / 0.28 (5.5$\times$) \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix E: Exhaustive non-circular split-half controls across Refusal, Behavioral Format, Factual Truth, and Random-Split Null.} Both Format and Truth are nearly orthogonal to Refusal ($|\cos|{=}0.02\text{--}0.22$). Even though Format has $5\text{--}13\times$ higher linear separability $d'$ than Refusal, its native-basin causal relay remains far weaker ($0.058\text{--}0.255$ vs. Refusal $0.318\text{--}0.789$). Under empirical covariance-matched null, Random-Split Clean MLP drops below $0.7\times$ baseline.}
+\label{tab:appE_controls}
+\end{table*}

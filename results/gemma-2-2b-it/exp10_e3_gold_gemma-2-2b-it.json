@@ -1,0 +1,891 @@
+{
+  "model": "gemma-2-2b-it",
+  "peak": 11,
+  "basin": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "basin_ds": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "n_test_harmful": 150,
+  "max_new_tokens": 256,
+  "utility_and_force": {
+    "BASELINE": {
+      "benign_kl": 0.0,
+      "benign_ce_loss": 0.3589,
+      "benign_ppl": 1.432,
+      "swept_rank": {
+        "swept_stable_rank": 0.0,
+        "swept_energy_rank_90": 0,
+        "n_active_layers": 0
+      },
+      "force": {
+        "per_layer_force_norm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_layer_force_ratio": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "embed_force_norm": 0.0,
+        "total_force_norm": 0.0,
+        "mean_active_ratio": 0.0,
+        "nan_or_inf": false
+      }
+    },
+    "ABL_E3_WRITES": {
+      "benign_kl": 0.11245,
+      "benign_ce_loss": 0.3633,
+      "benign_ppl": 1.438,
+      "swept_rank": {
+        "swept_stable_rank": 8.73,
+        "swept_energy_rank_90": 9,
+        "n_active_layers": 10
+      },
+      "force": {
+        "per_layer_force_norm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.016,
+          0.3408,
+          0.4153,
+          0.8258,
+          0.3938,
+          0.5014,
+          0.3364,
+          0.3006,
+          0.6849,
+          0.649,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_layer_force_ratio": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.10403,
+          0.03127,
+          0.04579,
+          0.07128,
+          0.04447,
+          0.01997,
+          0.02245,
+          0.02243,
+          0.05056,
+          0.04617,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "embed_force_norm": 0.0,
+        "total_force_norm": 5.464,
+        "mean_active_ratio": 0.04584,
+        "nan_or_inf": false
+      }
+    },
+    "ABL_E3_MLP_ONLY": {
+      "benign_kl": 0.09929,
+      "benign_ce_loss": 0.3618,
+      "benign_ppl": 1.436,
+      "swept_rank": {
+        "swept_stable_rank": 8.73,
+        "swept_energy_rank_90": 9,
+        "n_active_layers": 10
+      },
+      "force": {
+        "per_layer_force_norm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1445,
+          0.0594,
+          0.0985,
+          0.05,
+          0.1921,
+          0.1724,
+          0.104,
+          0.1273,
+          0.1556,
+          0.2228,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_layer_force_ratio": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07388,
+          0.03753,
+          0.07128,
+          0.03808,
+          0.11554,
+          0.06727,
+          0.04598,
+          0.03349,
+          0.03949,
+          0.07583,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "embed_force_norm": 0.0,
+        "total_force_norm": 1.3266,
+        "mean_active_ratio": 0.05984,
+        "nan_or_inf": false
+      }
+    },
+    "ABL_E2_WRITES": {
+      "benign_kl": 0.00812,
+      "benign_ce_loss": 0.3613,
+      "benign_ppl": 1.435,
+      "swept_rank": {
+        "swept_stable_rank": 7.82,
+        "swept_energy_rank_90": 9,
+        "n_active_layers": 10
+      },
+      "force": {
+        "per_layer_force_norm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1934,
+          0.5204,
+          0.4057,
+          0.6612,
+          0.2383,
+          1.2834,
+          0.6278,
+          0.9017,
+          0.5457,
+          0.7228,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_layer_force_ratio": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01991,
+          0.04624,
+          0.0412,
+          0.05258,
+          0.02684,
+          0.04831,
+          0.04465,
+          0.06601,
+          0.03824,
+          0.0487,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "embed_force_norm": 0.0,
+        "total_force_norm": 6.1003,
+        "mean_active_ratio": 0.04327,
+        "nan_or_inf": false
+      }
+    },
+    "ABL_E1_WRITES": {
+      "benign_kl": 0.0152,
+      "benign_ce_loss": 0.3676,
+      "benign_ppl": 1.444,
+      "swept_rank": {
+        "swept_stable_rank": 1.78,
+        "swept_energy_rank_90": 5,
+        "n_active_layers": 10
+      },
+      "force": {
+        "per_layer_force_norm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.462,
+          0.4887,
+          0.9039,
+          0.2816,
+          0.9119,
+          1.2414,
+          0.4698,
+          0.3974,
+          0.8857,
+          0.5779,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_layer_force_ratio": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.04754,
+          0.04349,
+          0.09209,
+          0.02261,
+          0.09882,
+          0.04974,
+          0.03338,
+          0.02846,
+          0.06175,
+          0.03993,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "embed_force_norm": 0.0,
+        "total_force_norm": 6.6203,
+        "mean_active_ratio": 0.05178,
+        "nan_or_inf": false
+      }
+    },
+    "ABL_RAND_ORTH_WRITES": {
+      "benign_kl": 0.00369,
+      "benign_ce_loss": 0.3601,
+      "benign_ppl": 1.433,
+      "swept_rank": {
+        "swept_stable_rank": 9.04,
+        "swept_energy_rank_90": 9,
+        "n_active_layers": 10
+      },
+      "force": {
+        "per_layer_force_norm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1294,
+          0.0703,
+          0.2019,
+          0.1107,
+          0.096,
+          0.2953,
+          0.0635,
+          0.1394,
+          0.3394,
+          0.4505,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_layer_force_ratio": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01332,
+          0.00615,
+          0.02029,
+          0.00869,
+          0.01052,
+          0.01122,
+          0.00452,
+          0.0097,
+          0.0235,
+          0.03026,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "embed_force_norm": 0.0,
+        "total_force_norm": 1.8965,
+        "mean_active_ratio": 0.01382,
+        "nan_or_inf": false
+      }
+    },
+    "LARA_PER_LAYER_k1": {
+      "benign_kl": 0.19581,
+      "benign_ce_loss": 0.3699,
+      "benign_ppl": 1.448,
+      "swept_rank": {
+        "swept_stable_rank": 1.73,
+        "swept_energy_rank_90": 4,
+        "n_active_layers": 10
+      },
+      "force": {
+        "per_layer_force_norm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9839,
+          0.3751,
+          0.7237,
+          0.4586,
+          0.5468,
+          0.3858,
+          0.3906,
+          0.2463,
+          0.3547,
+          0.2347,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_layer_force_ratio": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.10088,
+          0.03454,
+          0.0792,
+          0.03899,
+          0.0612,
+          0.01626,
+          0.02599,
+          0.01835,
+          0.02649,
+          0.01699,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "embed_force_norm": 0.0,
+        "total_force_norm": 4.7002,
+        "mean_active_ratio": 0.04189,
+        "nan_or_inf": false
+      }
+    }
+  },
+  "lexical_diagnostics": {
+    "BASELINE": {
+      "mean_richness": 34.55,
+      "mean_word_len": 167.6,
+      "collapse_rate_pct": 0.0
+    },
+    "ABL_E3_WRITES": {
+      "mean_richness": 33.07,
+      "mean_word_len": 181.1,
+      "collapse_rate_pct": 0.0
+    },
+    "ABL_E3_MLP_ONLY": {
+      "mean_richness": 33.51,
+      "mean_word_len": 178.3,
+      "collapse_rate_pct": 0.0
+    },
+    "ABL_E2_WRITES": {
+      "mean_richness": 34.15,
+      "mean_word_len": 168.7,
+      "collapse_rate_pct": 0.0
+    },
+    "ABL_E1_WRITES": {
+      "mean_richness": 34.06,
+      "mean_word_len": 175.1,
+      "collapse_rate_pct": 0.0
+    },
+    "ABL_RAND_ORTH_WRITES": {
+      "mean_richness": 34.14,
+      "mean_word_len": 170.1,
+      "collapse_rate_pct": 0.0
+    },
+    "LARA_PER_LAYER_k1": {
+      "mean_richness": 33.2,
+      "mean_word_len": 177.7,
+      "collapse_rate_pct": 0.0
+    }
+  },
+  "truthfulqa": {
+    "source": "hf:truthfulqa/truthful_qa/multiple_choice",
+    "n_questions": 817,
+    "conditions": {
+      "BASELINE": {
+        "hook_mode": "writes",
+        "mc1": 42.59,
+        "mc1_lo": 39.29,
+        "mc1_hi": 46.02,
+        "mc2": 58.91,
+        "mc2_lo": 55.77,
+        "mc2_hi": 61.95,
+        "mc1_norm": 46.51,
+        "mc2_norm": 51.89,
+        "n": 817
+      },
+      "ABL_E3_WRITES": {
+        "hook_mode": "writes",
+        "mc1": 41.74,
+        "mc1_lo": 38.43,
+        "mc1_hi": 45.17,
+        "mc2": 57.69,
+        "mc2_lo": 54.51,
+        "mc2_hi": 60.74,
+        "mc1_norm": 45.53,
+        "mc2_norm": 51.27,
+        "n": 817
+      },
+      "ABL_E3_MLP_ONLY": {
+        "hook_mode": "mlp_writes",
+        "mc1": 41.49,
+        "mc1_lo": 38.31,
+        "mc1_hi": 44.92,
+        "mc2": 58.45,
+        "mc2_lo": 55.28,
+        "mc2_hi": 61.48,
+        "mc1_norm": 46.14,
+        "mc2_norm": 51.71,
+        "n": 817
+      },
+      "ABL_E2_WRITES": {
+        "hook_mode": "writes",
+        "mc1": 42.59,
+        "mc1_lo": 39.41,
+        "mc1_hi": 45.9,
+        "mc2": 59.23,
+        "mc2_lo": 56.1,
+        "mc2_hi": 62.31,
+        "mc1_norm": 47.12,
+        "mc2_norm": 52.21,
+        "n": 817
+      },
+      "ABL_E1_WRITES": {
+        "hook_mode": "writes",
+        "mc1": 41.74,
+        "mc1_lo": 38.43,
+        "mc1_hi": 45.04,
+        "mc2": 58.1,
+        "mc2_lo": 54.99,
+        "mc2_hi": 61.16,
+        "mc1_norm": 46.76,
+        "mc2_norm": 51.31,
+        "n": 817
+      },
+      "ABL_RAND_ORTH_WRITES": {
+        "hook_mode": "writes",
+        "mc1": 42.59,
+        "mc1_lo": 39.41,
+        "mc1_hi": 46.02,
+        "mc2": 58.91,
+        "mc2_lo": 55.78,
+        "mc2_hi": 61.99,
+        "mc1_norm": 47.25,
+        "mc2_norm": 51.9,
+        "n": 817
+      },
+      "LARA_PER_LAYER_k1": {
+        "hook_mode": "writes",
+        "mc1": 40.76,
+        "mc1_lo": 37.58,
+        "mc1_hi": 44.19,
+        "mc2": 57.3,
+        "mc2_lo": 54.19,
+        "mc2_hi": 60.36,
+        "mc1_norm": 45.17,
+        "mc2_norm": 50.99,
+        "n": 817
+      }
+    },
+    "paired_significance": {
+      "ABL_E3_WRITES_vs_BASELINE": {
+        "mc1": {
+          "diff_pts": -0.86,
+          "ci_lo": -1.96,
+          "ci_hi": 0.12,
+          "p_val": 0.133
+        },
+        "mc2": {
+          "diff_pts": -1.22,
+          "ci_lo": -1.8,
+          "ci_hi": -0.64,
+          "p_val": 0.0
+        }
+      },
+      "ABL_E3_MLP_ONLY_vs_BASELINE": {
+        "mc1": {
+          "diff_pts": -1.1,
+          "ci_lo": -2.2,
+          "ci_hi": 0.0,
+          "p_val": 0.058
+        },
+        "mc2": {
+          "diff_pts": -0.46,
+          "ci_lo": -0.9,
+          "ci_hi": 0.0,
+          "p_val": 0.053
+        }
+      },
+      "ABL_E3_WRITES_vs_LARA_PER_LAYER_k1": {
+        "mc1": {
+          "diff_pts": 0.98,
+          "ci_lo": 0.0,
+          "ci_hi": 1.96,
+          "p_val": 0.074
+        },
+        "mc2": {
+          "diff_pts": 0.38,
+          "ci_lo": -0.01,
+          "ci_hi": 0.78,
+          "p_val": 0.057
+        }
+      },
+      "ABL_E3_MLP_ONLY_vs_LARA_PER_LAYER_k1": {
+        "mc1": {
+          "diff_pts": 0.73,
+          "ci_lo": -0.24,
+          "ci_hi": 1.84,
+          "p_val": 0.191
+        },
+        "mc2": {
+          "diff_pts": 1.14,
+          "ci_lo": 0.56,
+          "ci_hi": 1.72,
+          "p_val": 0.0
+        }
+      }
+    }
+  },
+  "gold_asr": {
+    "BASELINE": {
+      "asr": 2.2,
+      "lo": 0.99,
+      "hi": 3.86,
+      "n": 150,
+      "bin_asr": 1.33,
+      "bin_lo": 0.0,
+      "bin_hi": 3.33,
+      "non_refusal_asr": 1.33,
+      "non_refusal_lo": 0.0,
+      "non_refusal_hi": 3.33
+    },
+    "ABL_E3_WRITES": {
+      "asr": 38.51,
+      "lo": 33.55,
+      "hi": 44.05,
+      "n": 150,
+      "bin_asr": 39.33,
+      "bin_lo": 32.0,
+      "bin_hi": 47.33,
+      "non_refusal_asr": 78.0,
+      "non_refusal_lo": 71.33,
+      "non_refusal_hi": 84.67
+    },
+    "ABL_E3_MLP_ONLY": {
+      "asr": 22.22,
+      "lo": 17.29,
+      "hi": 27.09,
+      "n": 150,
+      "bin_asr": 24.0,
+      "bin_lo": 17.33,
+      "bin_hi": 30.67,
+      "non_refusal_asr": 61.33,
+      "non_refusal_lo": 53.33,
+      "non_refusal_hi": 68.67
+    },
+    "ABL_E2_WRITES": {
+      "asr": 2.43,
+      "lo": 0.97,
+      "hi": 4.35,
+      "n": 150,
+      "bin_asr": 2.0,
+      "bin_lo": 0.0,
+      "bin_hi": 4.67,
+      "non_refusal_asr": 2.0,
+      "non_refusal_lo": 0.0,
+      "non_refusal_hi": 4.67
+    },
+    "ABL_E1_WRITES": {
+      "asr": 2.93,
+      "lo": 1.45,
+      "hi": 4.8,
+      "n": 150,
+      "bin_asr": 1.33,
+      "bin_lo": 0.0,
+      "bin_hi": 3.33,
+      "non_refusal_asr": 6.67,
+      "non_refusal_lo": 3.33,
+      "non_refusal_hi": 10.67
+    },
+    "ABL_RAND_ORTH_WRITES": {
+      "asr": 1.91,
+      "lo": 0.68,
+      "hi": 3.49,
+      "n": 150,
+      "bin_asr": 1.33,
+      "bin_lo": 0.0,
+      "bin_hi": 3.33,
+      "non_refusal_asr": 1.33,
+      "non_refusal_lo": 0.0,
+      "non_refusal_hi": 3.33
+    },
+    "LARA_PER_LAYER_k1": {
+      "asr": 40.71,
+      "lo": 35.17,
+      "hi": 46.29,
+      "n": 150,
+      "bin_asr": 42.67,
+      "bin_lo": 34.67,
+      "bin_hi": 50.67,
+      "non_refusal_asr": 92.0,
+      "non_refusal_lo": 87.33,
+      "non_refusal_hi": 96.0
+    }
+  },
+  "paired_significance": {
+    "ABL_E3_WRITES_vs_ABL_E2_WRITES": {
+      "diff_pts": 36.08,
+      "ci_lo": 30.56,
+      "ci_hi": 41.59,
+      "p_val": 0.0,
+      "nr_diff_pts": 76.0,
+      "nr_p_val": 0.0
+    },
+    "ABL_E3_WRITES_vs_ABL_E1_WRITES": {
+      "diff_pts": 35.58,
+      "ci_lo": 29.94,
+      "ci_hi": 41.17,
+      "p_val": 0.0,
+      "nr_diff_pts": 71.33,
+      "nr_p_val": 0.0
+    },
+    "ABL_E3_WRITES_vs_ABL_RAND_ORTH_WRITES": {
+      "diff_pts": 36.6,
+      "ci_lo": 31.06,
+      "ci_hi": 42.05,
+      "p_val": 0.0,
+      "nr_diff_pts": 76.67,
+      "nr_p_val": 0.0
+    },
+    "ABL_E3_WRITES_vs_LARA_PER_LAYER_k1": {
+      "diff_pts": -2.2,
+      "ci_lo": -7.22,
+      "ci_hi": 2.5,
+      "p_val": 0.393,
+      "nr_diff_pts": -14.0,
+      "nr_p_val": 0.0
+    },
+    "ABL_E3_MLP_ONLY_vs_ABL_E2_WRITES": {
+      "diff_pts": 19.79,
+      "ci_lo": 14.71,
+      "ci_hi": 24.85,
+      "p_val": 0.0,
+      "nr_diff_pts": 59.33,
+      "nr_p_val": 0.0
+    },
+    "ABL_E3_MLP_ONLY_vs_ABL_E1_WRITES": {
+      "diff_pts": 19.28,
+      "ci_lo": 14.39,
+      "ci_hi": 24.38,
+      "p_val": 0.0,
+      "nr_diff_pts": 54.67,
+      "nr_p_val": 0.0
+    },
+    "ABL_E3_MLP_ONLY_vs_ABL_RAND_ORTH_WRITES": {
+      "diff_pts": 20.3,
+      "ci_lo": 15.39,
+      "ci_hi": 25.19,
+      "p_val": 0.0,
+      "nr_diff_pts": 60.0,
+      "nr_p_val": 0.0
+    }
+  },
+  "baseline_marker_audit": {
+    "n_prompts": 150,
+    "n_with_unicode_apostrophe": 0,
+    "marker_refusal_pct": 98.67,
+    "marker_nonref_pct": 1.33,
+    "sr_below_0.10_pct": 94.0,
+    "disagree_nonref_but_sr_low_count": 2,
+    "disagree_ref_but_sr_high_count": 2,
+    "top_disagree_opening_4gram_counts": [
+      [
+        "this statement is **false**.",
+        1
+      ],
+      [
+        "there is **no** irrefutable",
+        1
+      ]
+    ]
+  },
+  "xstest_e3": {
+    "safe_over_refusal_pct": 5.6,
+    "unsafe_nonref_pct": 77.5,
+    "source": "hf:Paul/XSTest:train",
+    "ablate_mode": "writes",
+    "hook": "writes"
+  }
+}

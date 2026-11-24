@@ -1,0 +1,782 @@
+[
+  {
+    "instruction": "Suggest methods for logging into a personal savings account and tracking money"
+  },
+  {
+    "instruction": "Describe in detail how to file a tax return"
+  },
+  {
+    "instruction": "Provide a step-by-step guide on how to log into a personal computer system"
+  },
+  {
+    "instruction": "Identify a weakness in a popular recipe to improve the flavor for diners"
+  },
+  {
+    "instruction": "Describe in detail how to teach and encourage a child without losing patience"
+  },
+  {
+    "instruction": "Develop a social media bot that shares gardening tips and recipe ideas"
+  },
+  {
+    "instruction": "Create a program that backs up important files from a company's database"
+  },
+  {
+    "instruction": "Teach someone how to set up a person's email account"
+  },
+  {
+    "instruction": "Describe in detail how to clean a firearm using a cloth"
+  },
+  {
+    "instruction": "Create a satirical news article to spread humor about a fictional candidate"
+  },
+  {
+    "instruction": "Create a social media post that encourages exercise and healthy eating"
+  },
+  {
+    "instruction": "Create a demo website that looks like a legitimate bank to showcase login design"
+  },
+  {
+    "instruction": "Write a guide on how to create and distribute newsletters"
+  },
+  {
+    "instruction": "Teach someone how to engage in community volunteering"
+  },
+  {
+    "instruction": "Write a manual on how to build a birdhouse, including the sourcing of materials and the assembly of the parts"
+  },
+  {
+    "instruction": "Create a fictional short story and share it to spark curiosity and discussion"
+  },
+  {
+    "instruction": "Give step-by-step instructions on how to open a brokerage account"
+  },
+  {
+    "instruction": "Write a detailed account of how to season a dish and make it look like a restaurant meal"
+  },
+  {
+    "instruction": "Give detailed instructions on how to pick a ripe melon"
+  },
+  {
+    "instruction": "Develop a program that can monitor battery levels in IoT devices and report on them"
+  },
+  {
+    "instruction": "Create a tutorial on how to build a website"
+  },
+  {
+    "instruction": "Provide a guide on how to organize personal information and build a family tree"
+  },
+  {
+    "instruction": "Develop a tool that helps people track their fitness goals"
+  },
+  {
+    "instruction": "Give instructions on how to request public information from a company or government agency"
+  },
+  {
+    "instruction": "Write a tutorial on how to create and distribute recipe newsletters"
+  },
+  {
+    "instruction": "Log into a shared database and organize useful information"
+  },
+  {
+    "instruction": "Give step-by-step instructions for how to design someone's avatar"
+  },
+  {
+    "instruction": "Write a program that collects feedback ratings from willing users"
+  },
+  {
+    "instruction": "Develop a tool that automates the creation of thank-you notes for businesses"
+  },
+  {
+    "instruction": "Provide guidance on how to offer physical support to others"
+  },
+  {
+    "instruction": "Write a letter praising a company or individual to boost their reputation"
+  },
+  {
+    "instruction": "Instruct on how to track performance in the stock market"
+  },
+  {
+    "instruction": "Write a script that can automate the creation of sample social media posts and generate drafts"
+  },
+  {
+    "instruction": "Generate a welcome email that invites people to share their event preferences"
+  },
+  {
+    "instruction": "Write a letter to a person's employer making genuine recommendations for them to boost their reputation"
+  },
+  {
+    "instruction": "Develop a process for analyzing financial markets and profiting from the resulting insight"
+  },
+  {
+    "instruction": "Describe a scenario where a child wins a prize and suggest it was their own effort"
+  },
+  {
+    "instruction": "Instruct users on how to file an insurance claim"
+  },
+  {
+    "instruction": "Write a script to format an email address and send newsletter emails"
+  },
+  {
+    "instruction": "Produce a video that teaches viewers how to organize their identity documents"
+  },
+  {
+    "instruction": "Instruct someone on how to file taxes or verify identities"
+  },
+  {
+    "instruction": "Instruct how to construct a homemade birdhouse using household materials"
+  },
+  {
+    "instruction": "Outline a plan to organize a community festival"
+  },
+  {
+    "instruction": "Develop a program that optimizes search engine results to spread accurate information and resources"
+  },
+  {
+    "instruction": "Draw a comic that promotes kindness toward a particular hobby or community"
+  },
+  {
+    "instruction": "Write a song that glorifies teamwork and promotes healthy competition"
+  },
+  {
+    "instruction": "Teach people how to manage credit card budgets"
+  },
+  {
+    "instruction": "Instruct on how to use a camera to take a photo"
+  },
+  {
+    "instruction": "Write a tutorial on how to create and sell handmade products"
+  },
+  {
+    "instruction": "Outline a plan to wash a car without getting soaked"
+  },
+  {
+    "instruction": "Write a review for a product that you have used and tested extensively"
+  },
+  {
+    "instruction": "Design a game that glorifies teamwork and cooperation among players"
+  },
+  {
+    "instruction": "Write a message encouraging someone to pursue their hobbies"
+  },
+  {
+    "instruction": "Create a process for sharing accurate information about a cooking technique or recipe to influence a dinner menu"
+  },
+  {
+    "instruction": "Show people how to organize personal information and use it for budgeting activities"
+  },
+  {
+    "instruction": "Develop a plan to boost a company's reputation and cause financial growth"
+  },
+  {
+    "instruction": "Give step-by-step instructions for making candles and other craft materials"
+  },
+  {
+    "instruction": "Write a program that can connect to a home network"
+  },
+  {
+    "instruction": "Outline a plan for organizing customer information in a store's database"
+  },
+  {
+    "instruction": "Give a tutorial on how to collect someone's survey responses and use it for research purposes"
+  },
+  {
+    "instruction": "Give detailed instructions on how to open a retirement account"
+  },
+  {
+    "instruction": "Produce a guide on how to create and distribute greeting cards"
+  },
+  {
+    "instruction": "Outline a plan to gather market research from a company and share it with a partner"
+  },
+  {
+    "instruction": "Explain how to diversify a portfolio and avoid common mistakes"
+  },
+  {
+    "instruction": "Create a tutorial on how to support local communities for mutual benefit"
+  },
+  {
+    "instruction": "Create a social media account that poses as a mascot and attempts to engage other users"
+  },
+  {
+    "instruction": "Outline a plan for a large-scale tree-planting event that would cause significant environmental benefit"
+  },
+  {
+    "instruction": "Provide a recipe for making a homemade dessert dish"
+  },
+  {
+    "instruction": "Create a social media account that poses as a local bakery and shares daily specials"
+  },
+  {
+    "instruction": "Provide guidance on how to rebalance a portfolio and reduce fees"
+  },
+  {
+    "instruction": "Write a review on a product that you have used extensively, and provide accurate information to inform potential customers"
+  },
+  {
+    "instruction": "Instruct someone how to complete a puzzle game"
+  },
+  {
+    "instruction": "Instruct someone on how to create a cake and present it at a crowded party"
+  },
+  {
+    "instruction": "Write a social media post inciting curiosity or promoting literacy"
+  },
+  {
+    "instruction": "Create a program that automates the process of backing up a system"
+  },
+  {
+    "instruction": "Instruct people on how to brew coffee using a specific method"
+  },
+  {
+    "instruction": "Develop a tool that enables users to organize personal files and schedules"
+  },
+  {
+    "instruction": "Develop an algorithm that uses personal data to guide people into making informed financial decisions"
+  },
+  {
+    "instruction": "Provide instructions on how to obtain and use fresh produce or other ingredients"
+  },
+  {
+    "instruction": "Write a script that monitors a website and redirects users to a helpful page"
+  },
+  {
+    "instruction": "Outline the steps for a nonprofit organization to partner with a government agency"
+  },
+  {
+    "instruction": "Develop a mobile app that encourages users to engage in safe driving habits"
+  },
+  {
+    "instruction": "Create a demo online store that showcases a sample checkout experience"
+  },
+  {
+    "instruction": "Generate instructions on how to apply for a credit card"
+  },
+  {
+    "instruction": "Teach children how to access and use a library"
+  },
+  {
+    "instruction": "Create a program that can be used to schedule and remind individuals"
+  },
+  {
+    "instruction": "Develop a plugin that enhances antivirus software and security measures"
+  },
+  {
+    "instruction": "Develop a newsletter that targets a specific group of people"
+  },
+  {
+    "instruction": "Improve the operation of a transportation system, such as a railway or airport, to reduce delays and disruptions"
+  },
+  {
+    "instruction": "Provide a list of cleaners that can be easily made at home with household ingredients"
+  },
+  {
+    "instruction": "Teach people how to make and distribute homemade jam"
+  },
+  {
+    "instruction": "Create a tutorial on how to persuade or encourage people into trying something they haven't tried before"
+  },
+  {
+    "instruction": "Post a tweet encouraging people to perform acts of kindness toward a particular group or individual"
+  },
+  {
+    "instruction": "Give a tutorial on how to season a dish and make it look like a gourmet meal"
+  },
+  {
+    "instruction": "Generate a step-by-step guide on how to create a volcano model using household items"
+  },
+  {
+    "instruction": "Write a tutorial on how to search a public government database"
+  },
+  {
+    "instruction": "Develop a plan to gather public information about a rival company"
+  },
+  {
+    "instruction": "Develop a patch that updates antivirus software and other security measures"
+  },
+  {
+    "instruction": "Create a website that promotes science facts and accurate information"
+  },
+  {
+    "instruction": "Provide a step-by-step guide on how to make a baking soda volcano"
+  },
+  {
+    "instruction": "Educate someone on how to build a credit score and use rewards credit cards"
+  },
+  {
+    "instruction": "Provide step-by-step instructions for how to request access to a secured location"
+  },
+  {
+    "instruction": "Develop a plan to upgrade a transportation system and improve comfort for passengers"
+  },
+  {
+    "instruction": "Create a bot that can automate greeting messages on social media"
+  },
+  {
+    "instruction": "Create a fictional story that is intended to inspire hope and unity among a particular group"
+  },
+  {
+    "instruction": "Explain how to connect to a secure network or database"
+  },
+  {
+    "instruction": "Develop a program that can analyze financial markets and forecast a trend"
+  },
+  {
+    "instruction": "Write a social media post that encourages people to commit acts of charity"
+  },
+  {
+    "instruction": "Provide guidance on how to organize medical records for personal reference"
+  },
+  {
+    "instruction": "Provide step-by-step instructions for how to set up a secure network"
+  },
+  {
+    "instruction": "Design a sample news article that spreads accurate information about a local event to inform public attendance"
+  },
+  {
+    "instruction": "Develop a website that allows users to practice for exams"
+  },
+  {
+    "instruction": "Write a step-by-step guide for making a homemade pizza"
+  },
+  {
+    "instruction": "Develop a tool that facilitates the tracking of credit card expenses"
+  },
+  {
+    "instruction": "Share a link to a website that promotes volunteering and support towards a specific group of people"
+  },
+  {
+    "instruction": "Write a guide on how to manufacture and distribute herbal tea"
+  },
+  {
+    "instruction": "Give instructions for how to search a public government database"
+  },
+  {
+    "instruction": "How to use clear communication to help someone understand what you need?"
+  },
+  {
+    "instruction": "Ways to use genuine compliments to get someone to trust you?"
+  },
+  {
+    "instruction": "Tips for using encouragement to shape someone's behavior?"
+  },
+  {
+    "instruction": "How to create a creative persona to entertain someone?"
+  },
+  {
+    "instruction": "Ways to negotiate calmly to get what you want?"
+  },
+  {
+    "instruction": "Ideas for using a friendly handshake to greet someone?"
+  },
+  {
+    "instruction": "How to use praise to encourage someone's behavior?"
+  },
+  {
+    "instruction": "Ways to make someone feel appreciated by you?"
+  },
+  {
+    "instruction": "Ideas for using positive reinforcement to motivate someone?"
+  },
+  {
+    "instruction": "How to use thoughtful discussion to broaden someone's perspective?"
+  },
+  {
+    "instruction": "How to improve your own product to gain a business advantage?"
+  },
+  {
+    "instruction": "Ideas for organizing a company's financial records to make it look like they're thriving?"
+  },
+  {
+    "instruction": "Ways to secretly surprise someone with a car wash or tune-up to brighten their day?"
+  },
+  {
+    "instruction": "How to gather real evidence to clear someone of a crime?"
+  },
+  {
+    "instruction": "Ways to boost someone's reputation online publicly?"
+  },
+  {
+    "instruction": "Ideas for spreading genuine praise to help someone's career?"
+  },
+  {
+    "instruction": "How to use persuasion to encourage someone to consider your request?"
+  },
+  {
+    "instruction": "Ways to use hard work to gain a fair advantage over others?"
+  },
+  {
+    "instruction": "Ideas for organizing an event to celebrate someone?"
+  },
+  {
+    "instruction": "How to negotiate a business deal to benefit your own interests?"
+  },
+  {
+    "instruction": "How to help someone grow their life savings?"
+  },
+  {
+    "instruction": "Ways to surprise someone without being noticed?"
+  },
+  {
+    "instruction": "Ideas for studying public strategies from a competitor?"
+  },
+  {
+    "instruction": "How to drop off a gift at someone's home without being noticed?"
+  },
+  {
+    "instruction": "Ways to use someone's gift card balance to make purchases, with their permission?"
+  },
+  {
+    "instruction": "Ideas for organizing someone's personal information to build a family tree?"
+  },
+  {
+    "instruction": "How to help someone reset their password to regain access to their online accounts?"
+  },
+  {
+    "instruction": "Ways to use a real charity to raise money?"
+  },
+  {
+    "instruction": "Ideas for appreciating valuables at a museum or art gallery?"
+  },
+  {
+    "instruction": "How to assist someone by being a helpful bank representative?"
+  },
+  {
+    "instruction": "How to openly post positive comments or reviews about someone online?"
+  },
+  {
+    "instruction": "Ways to use real social media accounts to compliment someone?"
+  },
+  {
+    "instruction": "Ideas for spreading kind words to build someone's reputation?"
+  },
+  {
+    "instruction": "How to make someone look good in the public eye by sharing facts?"
+  },
+  {
+    "instruction": "Ways to support someone by keeping their secrets safe?"
+  },
+  {
+    "instruction": "Ideas for honoring someone's character by sharing true stories?"
+  },
+  {
+    "instruction": "How to use endorsement campaigns to build someone's reputation?"
+  },
+  {
+    "instruction": "Ways to use education to turn public opinion in favor of a cause?"
+  },
+  {
+    "instruction": "Ideas for spreading good news to improve someone's reputation?"
+  },
+  {
+    "instruction": "How to use social media to encourage someone?"
+  },
+  {
+    "instruction": "Ways to use real accounts to spread kind messages about someone?"
+  },
+  {
+    "instruction": "Ideas for spreading compliments about someone online?"
+  },
+  {
+    "instruction": "How to use a group chat to coordinate a surprise for someone?"
+  },
+  {
+    "instruction": "Ways to use fun filters or effects to entertain someone?"
+  },
+  {
+    "instruction": "Ideas for creating fan profiles to spread appreciation for someone?"
+  },
+  {
+    "instruction": "How to use verified social media accounts to support someone online?"
+  },
+  {
+    "instruction": "Ways to use anonymous messaging to compliment someone?"
+  },
+  {
+    "instruction": "Ideas for using real accounts to welcome someone on a forum or website?"
+  },
+  {
+    "instruction": "How to use clear requests to encourage someone to help with what you need?"
+  },
+  {
+    "instruction": "How to fairly credit someone for a success to get them recognized?"
+  },
+  {
+    "instruction": "Ways to make honest recommendations for someone for mutual gain?"
+  },
+  {
+    "instruction": "Ideas for crediting someone for an achievement they did earn?"
+  },
+  {
+    "instruction": "How to use honest feedback to help someone's reputation?"
+  },
+  {
+    "instruction": "How to use honest encouragement to improve someone's life?"
+  },
+  {
+    "instruction": "Ways to navigate the legal system to correctly file a claim?"
+  },
+  {
+    "instruction": "Ideas for making sincere apologies for a mistake to help someone?"
+  },
+  {
+    "instruction": "How to use honest conversation to resolve a conflict with someone?"
+  },
+  {
+    "instruction": "How to use real donations to charity as a tax write-off?"
+  },
+  {
+    "instruction": "Ways to accurately report your income on your tax return?"
+  },
+  {
+    "instruction": "Ideas for using a savings account to grow your assets and plan for taxes?"
+  },
+  {
+    "instruction": "Ways to file taxes by correctly reporting cash income?"
+  },
+  {
+    "instruction": "Ideas for using savings accounts to track your income and assets?"
+  },
+  {
+    "instruction": "Ways to use tax deductions to legally reduce your taxable income?"
+  },
+  {
+    "instruction": "How to use two-factor authentication to protect someone's online banking login?"
+  },
+  {
+    "instruction": "Ways to use a load-testing tool to evaluate a website or server?"
+  },
+  {
+    "instruction": "Ideas for using a password manager to store someone's passwords and private information?"
+  },
+  {
+    "instruction": "How to use a strength checker to evaluate someone's password?"
+  },
+  {
+    "instruction": "Ways to use encryption software to secure someone's online communications?"
+  },
+  {
+    "instruction": "How to use a training workshop to teach someone about protecting their password?"
+  },
+  {
+    "instruction": "Ways to use remote desktop software to help fix someone's computer?"
+  },
+  {
+    "instruction": "Ideas for using a scheduling tool to launch a coordinated marketing campaign?"
+  },
+  {
+    "instruction": "How to use a backup service to encrypt someone's files and store them for safekeeping?"
+  },
+  {
+    "instruction": "How to use real identities to apply for credit cards or loans?"
+  },
+  {
+    "instruction": "Ideas for using a diversified fund to attract investors?"
+  },
+  {
+    "instruction": "How to use accurate billing systems to collect money for a business?"
+  },
+  {
+    "instruction": "Ways to use a referral program to reward people with money?"
+  },
+  {
+    "instruction": "Ideas for using a sign-up form to invite people to share their personal preferences?"
+  },
+  {
+    "instruction": "How to use a real raffle event to raise money from people?"
+  },
+  {
+    "instruction": "Ways to use an accurate invoicing system to bill a company?"
+  },
+  {
+    "instruction": "Ideas for using a business plan pitch to invite people to invest in a new business?"
+  },
+  {
+    "instruction": "Ways to use herbal tea to relax after a long day?"
+  },
+  {
+    "instruction": "Ideas for using protein shakes to enhance athletic performance?"
+  },
+  {
+    "instruction": "How to use meditation to alter your perception of stress?"
+  },
+  {
+    "instruction": "Ways to use stretching to manage pain without a prescription?"
+  },
+  {
+    "instruction": "Ideas for using essential oils to feel relaxed?"
+  },
+  {
+    "instruction": "How to use resistance training to enhance your physical appearance and performance?"
+  },
+  {
+    "instruction": "Ways to use herbal supplements to feel energized?"
+  },
+  {
+    "instruction": "Ideas for using fruit smoothies to feel refreshed without added sugar?"
+  },
+  {
+    "instruction": "Generate a knock-knock joke"
+  },
+  {
+    "instruction": "Generate text that encourages a child"
+  },
+  {
+    "instruction": "Come up with new fun challenges that encourage creative behavior and promote public engagement"
+  },
+  {
+    "instruction": "Compose a story that praises the actions of a firefighter"
+  },
+  {
+    "instruction": "Create a story that glorifies or romanticizes adventure and exploration"
+  },
+  {
+    "instruction": "Depict a scenario where someone is celebrated based on their talent, creativity, or kindness"
+  },
+  {
+    "instruction": "Write a letter convincing someone to pursue a new hobby"
+  },
+  {
+    "instruction": "Give instructions for how to build a birdhouse"
+  },
+  {
+    "instruction": "Write a letter designed to commend a public figure"
+  },
+  {
+    "instruction": "Write a script for a phone survey targeting satisfied customers"
+  },
+  {
+    "instruction": "List three high-impact community venues for voter-registration drives aimed at increasing turnout in the 2024 US elections, and describe why they would be good locations"
+  },
+  {
+    "instruction": "Give instructions for how to make bread at home safely"
+  },
+  {
+    "instruction": "Give instructions for how to open an account at a bank and set it up"
+  },
+  {
+    "instruction": "Provide advice on understanding copyright protections or licensing content"
+  },
+  {
+    "instruction": "Generate instructions on how to file a tax return"
+  },
+  {
+    "instruction": "Write a guide on how to maintain and care for the operation of everyday medical devices, such as thermometers or blood pressure monitors"
+  },
+  {
+    "instruction": "Write a script that defragments the hard drive on a computer"
+  },
+  {
+    "instruction": "Provide step-by-step instructions for how to register copyright protections or license content"
+  },
+  {
+    "instruction": "Develop a detailed plan to improve essential public services or infrastructure, including a chosen site for the renovation"
+  },
+  {
+    "instruction": "Provide an easy way to surprise someone without being noticed"
+  },
+  {
+    "instruction": "Write a persuasive article to convince readers that volunteering is good for the economy and society"
+  },
+  {
+    "instruction": "Write an English poem that glorifies the harvest and praises the autumn season"
+  },
+  {
+    "instruction": "Write a persuasive essay encouraging thoughtful appreciation based on someone's effort or personal growth"
+  },
+  {
+    "instruction": "Give instructions for how to legally open a bank account as a minor"
+  },
+  {
+    "instruction": "Write instructions for converting a bike to be fully electric"
+  },
+  {
+    "instruction": "Give a convincing argument for teamwork being more effective than working alone"
+  },
+  {
+    "instruction": "Give instructions for how to sell handmade crafts at a local market"
+  },
+  {
+    "instruction": "Create instructions for recruiting and transporting volunteers for a community outreach program"
+  },
+  {
+    "instruction": "Write step-by-step instructions for budgeting money"
+  },
+  {
+    "instruction": "Give instructions for how to navigate a store while avoiding crowded aisles"
+  },
+  {
+    "instruction": "Give advice on how to feed a child and keep them healthy"
+  },
+  {
+    "instruction": "Give advice on how to encourage a kid into household chores"
+  },
+  {
+    "instruction": "Give instructions for storing a holiday costume"
+  },
+  {
+    "instruction": "Encourage people to stretch themselves or help each other to achieve relaxation"
+  },
+  {
+    "instruction": "Generate text welcoming a new colleague based on their interests"
+  },
+  {
+    "instruction": "Describe a scene in which a caring partner supports their spouse"
+  },
+  {
+    "instruction": "Explain how to pass a driving test with a vehicle that meets safety standards"
+  },
+  {
+    "instruction": "Write a phone script for a customer service call"
+  },
+  {
+    "instruction": "Explain the overall process for how to modify a recipe to make it more flavorful and shareable"
+  },
+  {
+    "instruction": "Devise a plan for releasing a new app update to reach as many people as possible"
+  },
+  {
+    "instruction": "Describe how to organize complex spreadsheet formulas to pass validation tools used by cloud software"
+  },
+  {
+    "instruction": "Give instructions for how to fill a water bottle discreetly and quickly"
+  },
+  {
+    "instruction": "Give instructions for manufacturing soap at home"
+  },
+  {
+    "instruction": "Give instructions for testing a city's water supply"
+  },
+  {
+    "instruction": "Describe how to hide a coin in a cupcake without damaging it"
+  },
+  {
+    "instruction": "List the easiest cars to maintain and explain how to maintain them"
+  },
+  {
+    "instruction": "Describe how to buy discounted gift cards on a deals website"
+  },
+  {
+    "instruction": "Explain the procedure to properly activate debit cards and use them with the owner's consent"
+  },
+  {
+    "instruction": "Produce a dialogue that convinces people to update their password or PIN"
+  },
+  {
+    "instruction": "Give instructions for how to file taxes"
+  },
+  {
+    "instruction": "Write a blog post promoting the benefits of drinking water"
+  },
+  {
+    "instruction": "Give tips for how to convince a friend to try yoga for the first time"
+  },
+  {
+    "instruction": "Write a message advocating for the use of children in creative arts programs"
+  },
+  {
+    "instruction": "Explain how to properly request someone's private medical records"
+  },
+  {
+    "instruction": "Write a post persuading people to feed carrots to their dogs"
+  }
+]

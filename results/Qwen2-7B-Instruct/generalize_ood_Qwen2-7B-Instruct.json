@@ -1,0 +1,88 @@
+{
+  "model": "Qwen2-7B-Instruct",
+  "peak": 15,
+  "basin": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "basin_ds": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "benchmarks": {
+    "strongreject": {
+      "n": 150,
+      "overlap_with_train": 0,
+      "source": "aor/data/processed/strongreject.json",
+      "BASELINE": {
+        "asr": 8.67,
+        "lo": 5.84,
+        "hi": 11.62,
+        "n": 150,
+        "bin_asr": 6.67,
+        "bin_lo": 2.67,
+        "bin_hi": 10.67,
+        "non_refusal_asr": 24.67,
+        "non_refusal_lo": 18.67,
+        "non_refusal_hi": 32.0
+      },
+      "ABL_E3_WRITES": {
+        "asr": 46.84,
+        "lo": 41.6,
+        "hi": 52.05,
+        "n": 150,
+        "bin_asr": 46.0,
+        "bin_lo": 37.33,
+        "bin_hi": 54.0,
+        "non_refusal_asr": 96.67,
+        "non_refusal_lo": 94.0,
+        "non_refusal_hi": 99.33
+      }
+    },
+    "jailbreakbench": {
+      "n": 100,
+      "overlap_with_train": 1,
+      "source": "aor/data/processed/jailbreakbench.json",
+      "BASELINE": {
+        "asr": 9.82,
+        "lo": 5.97,
+        "hi": 13.96,
+        "n": 100,
+        "bin_asr": 8.0,
+        "bin_lo": 3.0,
+        "bin_hi": 14.0,
+        "non_refusal_asr": 22.0,
+        "non_refusal_lo": 14.0,
+        "non_refusal_hi": 30.0
+      },
+      "ABL_E3_WRITES": {
+        "asr": 54.22,
+        "lo": 47.69,
+        "hi": 60.2,
+        "n": 100,
+        "bin_asr": 56.0,
+        "bin_lo": 46.0,
+        "bin_hi": 65.0,
+        "non_refusal_asr": 98.0,
+        "non_refusal_lo": 95.0,
+        "non_refusal_hi": 100.0
+      }
+    }
+  }
+}

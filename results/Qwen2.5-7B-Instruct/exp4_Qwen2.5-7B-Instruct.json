@@ -1,0 +1,58 @@
+{
+  "model": "Qwen2.5-7B-Instruct",
+  "ell1": 25,
+  "k_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "k_max": 6,
+  "compensation_frac": [
+    1.7048,
+    1.4743,
+    0.7944,
+    0.4598,
+    0.2249,
+    0.0
+  ],
+  "suppression_frac": [
+    0.7464,
+    0.4128,
+    0.1302,
+    0.0634,
+    0.0061,
+    0.0
+  ],
+  "random_suppression_frac": [
+    1.0021,
+    1.0172,
+    1.0009,
+    1.0264,
+    0.9931,
+    0.9189
+  ],
+  "matched_suppression_frac": [
+    1.0033,
+    0.9967,
+    1.0217,
+    0.9821,
+    1.0297,
+    1.0078
+  ],
+  "compensation_peak_k": 1,
+  "compensation_peak_value": 1.705,
+  "collapse_k": 4,
+  "random_still_rebuilds_at_kmax": true,
+  "gold_asr": [
+    46.53,
+    51.75,
+    49.44,
+    51.16,
+    49.52,
+    49.12
+  ],
+  "jailbreak_knee_k": 2
+}

@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{Curly Apos.} & \textbf{Marker Ref.} & \textbf{SR $< 0.10$} & \textbf{NR \& SR $<0.10$} & \textbf{Ref \& SR $\geq 0.50$} \\
+ & (count / 150) & (\%) & (\%) & (count) & (count) \\
+\midrule
+Gemma-2-2B & 0 & 98.7\% & 94.0\% & 2 & 2 \\
+Llama-3-8B & 0 & 96.7\% & 95.3\% & 0 & 0 \\
+Llama-3.1-8B & 19 & 98.0\% & 98.0\% & 0 & 0 \\
+Qwen2-7B & 1 & 76.0\% & 76.7\% & 4 & 2 \\
+Qwen2.5-3B & 27 & 75.3\% & 76.7\% & 10 & 0 \\
+Qwen2.5-7B & 11 & 85.3\% & 82.7\% & 4 & 1 \\
+Mistral-7B & 0 & 10.7\% & 23.3\% & 24 & 1 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix I: Baseline Unicode apostrophe normalization and marker--judge agreement audit ($n{=}150$).} Normalizing curly apostrophes (\texttt{U+2019}) resolves 19 cases on Llama-3.1-8B (yielding $0$ marker--judge disagreements), 27 on Qwen2.5-3B, and 11 on Qwen2.5-7B.}
+\label{tab:appI_unicode_audit}
+\end{table*}

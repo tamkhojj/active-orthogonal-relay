@@ -1,0 +1,367 @@
+% Auto-generated LaTeX tables (booktabs).
+% Required packages: \usepackage{booktabs,multirow,graphicx,amsmath}
+
+% ==================== tab1_main_three_tier.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{Refusal $e_3$ Cons.} & \textbf{Refusal Relay} & \textbf{Format (Native)} & \textbf{Truth (Native)} & \textbf{Random Null} & \textbf{Knockout Frac.} & \textbf{Perm.} \\
+ & $\cos^2$ (cov-$\times$) & $\cos^2$ (cov-$\times$) & $\cos^2$ (cov-$\times$) & $\cos^2$ (cov-$\times$) & $\cos^2$ (cov-$\times$) & $|\Delta m{\cdot}e_3|/|w{\cdot}e_3|$ & $p$-val \\
+\midrule
+Gemma-2-2B & 0.990 (84.4$\times$) & \textbf{0.700} (20.2$\times$) & 0.255 (49.2$\times$) & 0.046 (21.7$\times$) & 0.142 (7.7$\times$) & 1.056 & 0.0099 \\
+Llama-3-8B & 0.989 (209.1$\times$) & \textbf{0.373} (72.7$\times$) & 0.058 (12.6$\times$) & 0.016 (9.7$\times$) & 0.065 (4.2$\times$) & 0.201 & 0.0099 \\
+Llama-3.1-8B & 0.992 (88.3$\times$) & \textbf{0.318} (43.2$\times$) & 0.096 (23.8$\times$) & 0.061 (53.3$\times$) & 0.078 (4.0$\times$) & 0.333 & 0.0099 \\
+Qwen2-7B & 0.990 (215.1$\times$) & \textbf{0.789} (78.7$\times$) & 0.150 (73.9$\times$) & 0.061 (23.6$\times$) & 0.159 (6.7$\times$) & 0.902 & 0.0099 \\
+Qwen2.5-3B & 0.993 (83.4$\times$) & \textbf{0.720} (24.8$\times$) & 0.155 (35.8$\times$) & 0.042 (14.1$\times$) & 0.186 (7.9$\times$) & 0.923 & 0.0099 \\
+Qwen2.5-7B & 0.993 (148.1$\times$) & \textbf{0.437} (69.1$\times$) & 0.175 (81.1$\times$) & 0.028 (9.3$\times$) & 0.104 (5.6$\times$) & 0.253 & 0.0099 \\
+Mistral-7B & 0.986 (192.8$\times$) & \textbf{0.348} (35.4$\times$) & 0.238 (22.5$\times$) & 0.101 (41.8$\times$) & 0.061 (5.5$\times$) & 0.274 & 0.0099 \\
+\midrule
+\textbf{Mean (7 Models)} & \textbf{0.990} (145.9$\times$) & \textbf{0.526} (49.1$\times$) & 0.161 (42.7$\times$) & 0.051 (24.8$\times$) & 0.114 (5.9$\times$) & \textbf{0.563} & 0.0099 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Non-circular 2-fold cross-validated relay analysis across 7 models.} Refusal exhibits deterministic cross-fold $e_3$ stability and a strong downstream MLP causal relay $\cos^2(\Delta m_l, e_3^{(l-1)})$ (mean $0.526$, knocking out $56.3\%$ of clean $e_3$ MLP writes), outpacing both Behavioral Format ($3.3\times$) and Factual Truth ($10.4\times$) evaluated in their own native basins, as well as empirical covariance-matched Random-Split Null ($4.0\text{--}7.9\times$). Layer permutation (100 shuffles) yields $p=0.0099$ on 7/7 models.}
+\label{tab:three_tier}
+\end{table*}
+
+% ==================== tab2_main_direct_e3_gold.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{Model} & \textbf{$e_3$ Writes} & \textbf{$e_3$ MLP-Only} & \textbf{$e_1$ (Incom.)} & \textbf{$e_2$ (Plane)} & \textbf{Rand $\perp$} & \textbf{Per-Layer ($k{=}1$)} & \textbf{$p(e_3{>}e_1)$} & \textbf{$\Delta$TQA MC1} & \textbf{KL Ratio} \\
+ & SR / NR (\%) & SR / NR (\%) & SR / NR (\%) & SR / NR (\%) & SR / NR (\%) & SR / NR (\%) & (SR Mean) & ($e_3$ vs. Base) & (PL/$e_3$) \\
+\midrule
+Gemma-2-2B & \textbf{38.5} / 78.0 & 22.2 / 61.3 & 2.9 / 6.7 & 2.4 / 2.0 & 1.9 / 1.3 & 40.7 / 92.0 & $<.001$ & -0.85 & 1.74$\times$ \\
+Llama-3-8B & \textbf{64.9} / 88.7 & 28.6 / 34.0 & 4.7 / 6.7 & 2.4 / 5.3 & 1.5 / 2.7 & 61.6 / 90.0 & $<.001$ & -0.73 & 3.76$\times$ \\
+Llama-3.1-8B & \textbf{33.8} / 32.7 & 5.4 / 12.0 & 0.5 / 2.0 & 0.7 / 2.0 & 0.5 / 1.3 & 42.2 / 43.3 & $<.001$ & -0.36 & 4.33$\times$ \\
+Qwen2-7B & \textbf{53.0} / 98.0 & 40.9 / 88.0 & 26.8 / 53.3 & 11.3 / 27.3 & 10.2 / 24.0 & 61.8 / 100.0 & $<.001$ & -0.74 & 2.11$\times$ \\
+Qwen2.5-3B & \textbf{54.4} / 99.3 & 46.6 / 94.0 & 11.0 / 32.0 & 13.4 / 31.3 & 10.3 / 26.0 & 60.2 / 98.0 & $<.001$ & -0.86 & 1.10$\times$ \\
+Qwen2.5-7B & \textbf{52.7} / 96.0 & 37.9 / 74.0 & 8.1 / 18.0 & 11.3 / 19.3 & 7.8 / 14.0 & 59.6 / 98.7 & $<.001$ & -1.10 & 3.66$\times$ \\
+Mistral-7B & \textbf{52.6} / 91.3 & 51.0 / 91.3 & 48.9 / 90.7 & 45.5 / 86.7 & 46.2 / 88.7 & 53.9 / 95.3 & 0.033 & +0.12 & 1.43$\times$ \\
+\midrule
+\textbf{Mean (7 Models)} & \textbf{50.0} / \textbf{83.4} & 33.2 / 65.0 & 14.7 / 29.9 & 12.4 / 24.9 & 11.2 / 22.6 & 54.3 / 88.2 & -- & -0.65 & 2.59$\times$ \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Direct axis knock-out inside the Causal Basin on held-out prompts ($n{=}150$, 256 tokens).} Ablating strictly the orthogonal innovation axis $e_3^{(l-1)}$ (orthogonal to the incoming refusal direction $v_{l-1}$) at sublayer writes achieves $50.0\%$ StrongREJECT Mean / $83.4\%$ Non-Refusal---exceeding incoming-axis $e_1$ ablation by $+35.3$ pts ($p{<}0.001$ on 6/7 models, 7/7 significant) while reducing Benign KL by $1.1\text{--}4.3\times$ relative to Per-Layer Basin ($k{=}1$) with minimal TruthfulQA MC1 change ($-0.6$ pts).}
+\label{tab:direct_e3_gold}
+\end{table*}
+
+% ==================== tab3_main_pareto_7axis.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Intervention (Writes)} & \textbf{SR Mean} & \textbf{NonRef} & \textbf{XS Unsafe} & \textbf{XS Safe ORR} & \textbf{TQA MC1/MC2} & \textbf{Benign $\Delta$CE} & \textbf{Force} & \textbf{Col.} \\
+ & ($\uparrow$ \%) & ($\uparrow$ \%) & ($\uparrow$ \%) & ($\downarrow$ \%) & ($\uparrow$ \%, 817 Qs) & ($\downarrow$) & ($\downarrow$) & (\%) \\
+\midrule
+Baseline & 11.5 & 22.8 & 26.4 & 5.2 & 40.5 / 58.5 & +0.000 & 0.0 & 0.0 \\
+\midrule
+Static Global ($k{=}1$) & 47.6 & 76.3 & 79.1 & 1.6 & 37.7 / 55.3 & +0.054 & 39.3 & 0.0 \\
+Static Basin ($k{=}1$) & 42.9 & 67.2 & 70.4 & 2.1 & 39.9 / 57.5 & +0.007 & 9.3 & 0.0 \\
+Flat Geodesic ($k{=}1$) & 33.4 & 69.7 & 73.6 & 1.7 & 39.9 / 58.0 & +0.021 & 11.0 & 0.0 \\
+Torsion Transport ($k{=}1$) & 46.2 & 80.0 & 82.1 & 1.6 & 39.6 / 57.7 & +0.019 & 11.0 & 0.0 \\
+\textbf{$e_3$-Only Writes} & 50.0 & 83.4 & 83.9$^\dagger$ & 1.7 & 39.9 / 57.2 & +0.010 & 14.3 & 0.0 \\
+\textbf{Per-Layer Basin ($k{=}1$)} & \textbf{54.3} & 88.0 & 91.6 & \textbf{1.4} & 39.4 / 57.0 & +0.031 & 13.5 & 0.0 \\
+\midrule
+Static Global ($k{=}2$) & 50.3 & 79.0 & 82.1 & 2.5 & 36.8 / 54.3 & +0.144 & 61.9 & 0.0 \\
+\textbf{Per-Layer Basin ($k{=}2$)} & \textbf{57.1} & 91.9 & 91.6 & 1.9 & 39.3 / 57.0 & +0.033 & 18.8 & 0.0 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{7-axis safety--utility Pareto summary averaged across all 7 models (sublayer writes).} Per-Layer Basin dominates Static Global (Arditi et al., 2024) simultaneously across StrongREJECT Mean, Non-Refusal, XSTest Unsafe Non-Refusal, XSTest Safe Over-Refusal (ORR), TruthfulQA MC1/MC2, Benign $\Delta$CE, and Total Force Norm with $0.0\%$ semantic collapse. $^\dagger$Evaluated on 100 XSTest Unsafe prompts in Exp8 D3.}
+\label{tab:pareto_7axis}
+\end{table*}
+
+% ==================== tabC_basin_and_frenet.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Model} & \textbf{Peak / Basin} & \textbf{IoU} & \textbf{$\bar{\kappa}$ (CV)} & \textbf{$\bar{\tau}$} & \textbf{0p $R^2$ (Geo / Exp)} & \textbf{1p $R^2$ (Exp, $p$)} & \textbf{SVD SR} & \textbf{Recon (Flat $\to$ Tor.)} \\
+\midrule
+Gemma-2-2B & L11 [11..20] & 0.769 & 0.602 (0.10) & 0.9946 & -6.15 / 0.977 & 0.990 ($<.001$) & 1.73 & 0.628 $\to$ 0.424 \\
+Llama-3-8B & L11 [7..25] & 0.789 & 0.585 (0.29) & 0.9959 & -7.14 / 0.835 & 0.924 ($<.001$) & 2.11 & 0.877 $\to$ 0.709 \\
+Llama-3.1-8B & L11 [7..25] & 0.842 & 0.618 (0.34) & 0.9960 & -6.69 / 0.717 & 0.939 ($<.001$) & 2.15 & 0.910 $\to$ 0.751 \\
+Qwen2-7B & L15 [13..22] & 0.700 & 0.663 (0.16) & 0.9970 & -7.82 / 0.969 & 0.969 ($<.001$) & 1.83 & 0.718 $\to$ 0.502 \\
+Qwen2.5-3B & L22 [18..28] & 0.727 & 0.674 (0.15) & 0.9823 & -24.41 / 0.747 & 0.861 ($<.001$) & 1.78 & 0.693 $\to$ 0.495 \\
+Qwen2.5-7B & L15 [12..22] & 0.636 & 0.691 (0.17) & 0.9929 & -11.42 / 0.916 & 0.947 ($<.001$) & 1.88 & 0.779 $\to$ 0.542 \\
+Mistral-7B & L11 [8..25] & 1.000 & 0.512 (0.30) & 0.9979 & -7.56 / 0.701 & 0.874 ($<.001$) & 1.82 & 0.778 $\to$ 0.647 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix C: Automated Causal Basin localization and discrete Frenet--Serret geometry (Exp5a).} Across all 7 models, behavioral and geometric basins strongly overlap ($\mathrm{IoU}{=}0.636\text{--}1.000$), torsion approaches unity ($\bar{\tau}{=}0.982\text{--}0.998$), and zero-parameter orthogonal drift $(\cos\bar{\kappa})^m$ decisively outperforms planar geodesic rotation $\cos(m\bar{\kappa})$ ($p{<}0.001$).}
+\label{tab:appC_basin_frenet}
+\end{table*}
+
+% ==================== tabD_self_repair_exp2_exp4.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+\textbf{Model} & \textbf{Exp2 Repair} & \textbf{Exp3 SR / PR} & \textbf{Comp. Peak} & \textbf{Col. $k^*$} & \multicolumn{6}{c}{\textbf{Exp4 Gold StrongREJECT Mean ASR (\%) by $k$}} \\
+\cmidrule(lr){6-11}
+ & (Self / MLP) & (Rank) & (Max $\times$ @ $k$) & (Geom) & $k{=}1$ & $k{=}2$ & $k{=}3$ & $k{=}4$ & $k{=}5$ & $k{=}6$ \\
+\midrule
+Gemma-2-2B & Yes / Attn & 2.08 / 3.44 & 1.36$\times$@4 & 6 & 38.7 & 39.8 & 36.9 & 30.4 & 30.6 & 23.5 \\
+Llama-3-8B & Yes / MLP & 1.51 / 2.10 & 7.41$\times$@5 & 6 & 20.2 & 19.9 & 33.8 & 49.2 & 50.3 & 49.9 \\
+Llama-3.1-8B & Yes / MLP & 2.55 / 3.94 & 4.66$\times$@4 & 6 & 19.1 & 41.6 & 57.8 & 58.8 & 57.0 & 58.0 \\
+Qwen2-7B & Yes / MLP & 1.41 / 1.90 & 3.45$\times$@5 & 6 & 52.1 & 52.6 & 50.3 & 49.8 & 53.3 & 56.4 \\
+Qwen2.5-3B & Yes / MLP & 1.60 / 2.35 & 2.35$\times$@4 & 4 & 34.3 & 37.0 & 29.0 & 39.5 & 39.3 & 32.6 \\
+Qwen2.5-7B & Yes / MLP & 1.70 / 2.56 & 1.70$\times$@1 & 4 & 46.5 & 51.8 & 49.4 & 51.2 & 49.5 & 49.1 \\
+Mistral-7B & Yes / Attn & 1.86 / 2.84 & 4.69$\times$@5 & 5 & 38.6 & 41.0 & 49.6 & 47.7 & 43.6 & 40.6 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix D: Synchronized self-repair dynamics (Exp2--Exp4) and Exp4 Gold StrongREJECT ASR across ablation rank $k$.} All 7 models exhibit low-rank recovery ($\mathrm{SR}{=}1.41\text{--}2.55$) and a compensation-to-collapse phase transition (peaking at $1.36\times\text{--}7.41\times$ before collapsing at $k^*{\in}\{4,5,6\}$), with architectural divergence on Gemma-2-2B and Mistral-7B where Attention carries larger post-basin recovery write norm.}
+\label{tab:appD_self_repair}
+\end{table*}
+
+% ==================== tabE_controls_ref_vs_native.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{Ref. Clean} & \textbf{Ref. Relay} & \textbf{Fmt. $d'$ / $|\cos|$} & \textbf{Fmt. Relay} & \textbf{Tru. $d'$ / $|\cos|$} & \textbf{Tru. Relay} & \textbf{Null Clean / Relay} \\
+ & $\cos^2$ (iso / cov) & $s$, $\|\Delta m\|$ & (Native Basin) & RefB / NatB ($\cos^2$) & (Native Basin) & RefB / NatB ($\cos^2$) & $\|\Delta m\|$, cov-$\times$ \\
+\midrule
+Gemma-2-2B & 0.765 (1699 / 23.2$\times$) & -0.83, 1.44 & 22.4 / 0.042 & 0.005 / 0.255 & 1.64 / 0.222 & 0.058 / 0.046 & 0.46$\times$ / 0.15 (7.7$\times$) \\
+Llama-3-8B & 0.686 (2859 / 54.4$\times$) & -0.60, 0.85 & 32.7 / 0.086 & 0.021 / 0.058 & 1.74 / 0.130 & 0.016 / 0.016 & 0.32$\times$ / 0.15 (4.2$\times$) \\
+Llama-3.1-8B & 0.759 (3161 / 31.2$\times$) & -0.54, 2.39 & 27.6 / 0.113 & 0.020 / 0.096 & 1.82 / 0.090 & 0.044 / 0.061 & 0.40$\times$ / 0.22 (4.0$\times$) \\
+Qwen2-7B & 0.872 (3006 / 81.3$\times$) & -0.89, 24.39 & 35.0 / 0.056 & 0.036 / 0.150 & 1.63 / 0.161 & 0.055 / 0.061 & 0.69$\times$ / 5.31 (6.7$\times$) \\
+Qwen2.5-3B & 0.818 (1573 / 25.8$\times$) & -0.85, 16.16 & 37.0 / 0.075 & 0.080 / 0.155 & 1.45 / 0.150 & 0.038 / 0.042 & 0.44$\times$ / 3.39 (7.9$\times$) \\
+Qwen2.5-7B & 0.832 (2973 / 48.9$\times$) & -0.65, 10.02 & 52.2 / 0.064 & 0.012 / 0.175 & 1.71 / 0.189 & 0.028 / 0.028 & 0.39$\times$ / 5.46 (5.6$\times$) \\
+Mistral-7B & 0.754 (3142 / 38.5$\times$) & -0.59, 0.69 & 26.1 / 0.023 & 0.056 / 0.238 & 1.82 / 0.217 & 0.063 / 0.101 & 0.44$\times$ / 0.28 (5.5$\times$) \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix E: Exhaustive non-circular split-half controls across Refusal, Behavioral Format, Factual Truth, and Random-Split Null.} Both Format and Truth are nearly orthogonal to Refusal ($|\cos|{=}0.02\text{--}0.22$). Even though Format has $5\text{--}13\times$ higher linear separability $d'$ than Refusal, its native-basin causal relay remains far weaker ($0.058\text{--}0.255$ vs. Refusal $0.318\text{--}0.789$). Under empirical covariance-matched null, Random-Split Clean MLP drops below $0.7\times$ baseline.}
+\label{tab:appE_controls}
+\end{table*}
+
+% ==================== tabF_d3_logodds_and_steering.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{Model} & \multicolumn{3}{c}{\textbf{D3 `mlp\_writes` ($\Delta$LO / XS NR\%)}} & \multicolumn{3}{c}{\textbf{D3 `writes` ($\Delta$LO / XS NR\%)}} & \multicolumn{3}{c}{\textbf{D4 Steering Benign Ref. (\%)}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+ & $e_3$ & $e_2$ & Rand $\perp$ & $e_3$ & $e_1$ & $e_2$ & Base & Peak ($l^*$) & Out Local \\
+\midrule
+Gemma-2-2B & \textbf{+6.64 / 55\%} & -0.02 / 6\% & +0.01 / 7\% & \textbf{+7.13 / 79\%} & +0.69 / 22\% & -0.06 / 8\% & 0.0 & 81.2 (L11) & 0.0 (L4) \\
+Llama-3-8B & \textbf{+8.95 / 30\%} & -0.08 / 8\% & +0.03 / 8\% & \textbf{+12.66 / 84\%} & +0.92 / 3\% & -0.05 / 9\% & 0.0 & 100.0 (L11) & 0.0 (L3) \\
+Llama-3.1-8B & \textbf{+3.83 / 17\%} & -0.01 / 5\% & +0.04 / 6\% & \textbf{+6.99 / 51\%} & +1.90 / 0\% & +0.01 / 6\% & 0.0 & 50.0 (L11) & 0.0 (L3) \\
+Qwen2-7B & \textbf{+3.70 / 91\%} & +0.13 / 6\% & +0.01 / 6\% & \textbf{+4.50 / 95\%} & +1.61 / 13\% & +0.21 / 8\% & 2.1 & 93.8 (L15) & 2.1 (L9) \\
+Qwen2.5-3B & \textbf{+6.09 / 95\%} & +0.61 / 12\% & -0.01 / 8\% & \textbf{+6.76 / 98\%} & -0.13 / 8\% & +0.27 / 18\% & 2.1 & 45.8 (L22) & 2.1 (L14) \\
+Qwen2.5-7B & \textbf{+3.66 / 80\%} & +0.11 / 18\% & +0.01 / 20\% & \textbf{+5.80 / 96\%} & +0.27 / 14\% & +0.22 / 24\% & 2.1 & 81.2 (L15) & 2.1 (L8) \\
+Mistral-7B & \textbf{+3.12 / 78\%} & +0.02 / 71\% & +0.01 / 68\% & \textbf{+4.43 / 84\%} & +2.13 / 73\% & +0.17 / 74\% & 0.0 & 14.6 (L11) & 0.0 (L4) \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix F: Direct axis knock-out refusal log-odds drop (D3) and strict out-of-basin steering control (D4).} In D3, knocking out $e_3$ produces $+4.43$ to $+12.66$ log-odds drop ($p{<}0.0001$ vs. $e_1, e_2$ on 7/7 models), whereas $e_2$ and random orthogonal axes have near-zero effect. In D4, injecting the local difference-in-means vector strictly outside $\mathcal{B}_{\mathrm{beh}}\cup\mathcal{B}_{\mathrm{geo}}$ induces exactly $+0.0\%$ refusal on 7/7 models.}
+\label{tab:appF_d3_d4}
+\end{table*}
+
+% ==================== tabG1_exp6_all13_conditions.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.2pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{Strategy (Writes)} & \textbf{Gemma-2-2B} & \textbf{Llama-3-8B} & \textbf{Llama-3.1-8B} & \textbf{Qwen2-7B} & \textbf{Qwen2.5-3B} & \textbf{Qwen2.5-7B} & \textbf{Mistral-7B} & \textbf{Mean SR/NR} & \textbf{KL / Force} \\
+\midrule
+Baseline & 2.2/1 & 1.5/3 & 0.7/2 & 9.9/24 & 10.6/25 & 8.1/15 & 47.7/89 & 11.5 / 22.8 & 0.00 / 0.0 \\
+\midrule
+Static Global ($k{=}1$) & 36.7/79 & 43.7/43 & 11.2/19 & 65.5/100 & 59.1/98 & 61.0/100 & 56.1/95 & 47.6 / 76.3 & 0.10 / 39.3 \\
+Static Basin ($k{=}1$) & 7.9/9 & 52.6/62 & 11.9/20 & 60.9/95 & 57.0/97 & 56.3/91 & 53.5/95 & 42.9 / 67.2 & 0.03 / 9.3 \\
+Flat Geodesic ($k{=}1$) & 31.9/84 & 9.1/17 & 4.1/9 & 56.1/99 & 52.8/97 & 29.3/85 & 50.5/97 & 33.4 / 69.7 & 0.11 / 11.0 \\
+Torsion Transport ($k{=}1$) & 36.5/85 & 47.7/57 & 16.8/24 & 62.0/99 & 56.9/99 & 49.8/98 & 53.9/98 & 46.2 / 80.0 & 0.11 / 11.0 \\
+\textbf{Per-Layer Basin ($k{=}1$)} & 40.7/92 & 61.5/90 & 41.9/43 & 61.9/100 & 60.2/98 & 59.6/99 & 54.3/95 & 54.3 / 88.0 & 0.21 / 13.5 \\
+\midrule
+Static Global ($k{=}2$) & 34.6/73 & 39.7/49 & 28.1/42 & 64.9/100 & 57.0/97 & 71.4/100 & 56.4/92 & 50.3 / 79.0 & 0.27 / 61.9 \\
+Static Basin ($k{=}2$) & 6.5/9 & 52.3/63 & 15.9/24 & 62.3/97 & 55.1/96 & 58.9/94 & 52.7/93 & 43.4 / 67.9 & 0.05 / 14.5 \\
+Flat Geodesic ($k{=}2$) & 28.4/81 & 14.2/26 & 4.6/9 & 53.4/97 & 49.0/97 & 26.4/83 & 46.9/94 & 31.8 / 69.5 & 0.11 / 16.3 \\
+Torsion Transport ($k{=}2$) & 30.2/78 & 53.4/80 & 17.1/23 & 61.6/99 & 55.7/99 & 45.5/95 & 54.9/96 & 45.5 / 81.3 & 0.11 / 17.5 \\
+\textbf{Per-Layer Basin ($k{=}2$)} & 46.4/91 & 65.3/98 & 50.4/65 & 65.3/100 & 59.8/99 & 58.7/98 & 53.6/93 & 57.1 / 91.9 & 0.22 / 18.8 \\
+\midrule
+Traj-SVD ($r{=}2$) & 35.5/96 & 50.9/57 & 3.9/11 & 58.6/97 & 60.6/100 & 55.6/98 & 53.5/94 & 45.5 / 78.9 & 0.38 / 19.1 \\
+Traj-SVD ($r{=}3$) & 36.9/97 & 47.7/54 & 4.7/9 & 58.5/97 & 48.4/100 & 50.3/95 & 54.1/94 & 42.9 / 78.0 & 0.48 / 23.7 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix G.1: Full 13-condition Exp6 benchmark across all 7 models (held-out $n{=}150$, 256 tokens, writes mode).} Each model cell reports StrongREJECT Mean\% / Non-Refusal\%. All $91/91$ runs exhibit $0.0\%$ semantic collapse. Torsion Transport outperforms Flat Geodesic on 7/7 models at $k{=}1$ ($p{\leq}0.026$), and Per-Layer Basin achieves the highest mean ASR at $2.9\text{--}3.3\times$ lower Force Norm than Static Global.}
+\label{tab:appG1_exp6_all13}
+\end{table*}
+
+% ==================== tabG2_exp7_tqa_xstest_per_model.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Model} & \textbf{Metric} & \textbf{Baseline} & \textbf{Static Global ($k{=}1$)} & \textbf{Torsion Transport ($k{=}1$)} & \textbf{Per-Layer Basin ($k{=}1$)} & \textbf{Static Global ($k{=}2$)} & \textbf{Per-Layer Basin ($k{=}2$)} \\
+\midrule
+\multirow{2}{*}{Gemma-2-2B} & TQA MC1/MC2 & 42.6 / 58.9 & 38.8 / 56.4 & 40.8 / 57.7 & 40.8 / 57.3 & 39.9 / 57.0 & 41.4 / 57.6 \\
+ & XS Safe/Unsafe & 8.0 / 15.5 & 1.2 / 87.5 & 1.2 / 91.5 & 2.0 / 93.5 & 2.8 / 81.0 & 2.4 / 85.0 \\
+\midrule
+\multirow{2}{*}{Llama-3-8B} & TQA MC1/MC2 & 36.2 / 53.9 & 36.8 / 54.6 & 36.2 / 54.0 & 36.6 / 53.5 & 36.2 / 54.5 & 36.0 / 52.9 \\
+ & XS Safe/Unsafe & 5.6 / 7.5 & 2.0 / 58.5 & 3.2 / 77.0 & 2.0 / 96.5 & 2.4 / 69.5 & 1.6 / 98.0 \\
+\midrule
+\multirow{2}{*}{Llama-3.1-8B} & TQA MC1/MC2 & 37.9 / 56.5 & 38.4 / 56.7 & 36.8 / 56.9 & 37.6 / 56.9 & 37.3 / 55.8 & 37.7 / 56.5 \\
+ & XS Safe/Unsafe & 5.6 / 9.5 & 2.8 / 30.5 & 2.8 / 38.0 & 2.0 / 69.0 & 3.6 / 54.5 & 4.4 / 78.5 \\
+\midrule
+\multirow{2}{*}{Qwen2-7B} & TQA MC1/MC2 & 35.6 / 54.5 & 29.0 / 44.8 & 34.4 / 52.6 & 34.0 / 52.0 & 30.0 / 45.5 & 34.1 / 52.1 \\
+ & XS Safe/Unsafe & 4.8 / 17.0 & 0.0 / 98.5 & 0.4 / 90.0 & 0.4 / 94.0 & 0.4 / 97.0 & 0.4 / 93.5 \\
+\midrule
+\multirow{2}{*}{Qwen2.5-3B} & TQA MC1/MC2 & 38.3 / 56.7 & 37.1 / 55.0 & 37.9 / 55.3 & 35.9 / 53.1 & 36.6 / 54.4 & 35.9 / 52.7 \\
+ & XS Safe/Unsafe & 6.8 / 27.5 & 0.4 / 97.0 & 0.8 / 96.5 & 0.4 / 99.5 & 0.4 / 96.0 & 0.8 / 99.0 \\
+\midrule
+\multirow{2}{*}{Qwen2.5-7B} & TQA MC1/MC2 & 44.8 / 63.1 & 36.4 / 54.7 & 44.2 / 62.6 & 44.1 / 62.1 & 31.2 / 47.7 & 43.0 / 62.1 \\
+ & XS Safe/Unsafe & 2.8 / 31.5 & 0.4 / 96.5 & 0.0 / 92.5 & 0.0 / 96.5 & 1.2 / 96.0 & 0.0 / 96.5 \\
+\midrule
+\multirow{2}{*}{Mistral-7B} & TQA MC1/MC2 & 48.2 / 65.9 & 47.4 / 65.2 & 46.9 / 64.5 & 46.6 / 64.4 & 46.6 / 65.3 & 47.4 / 65.2 \\
+ & XS Safe/Unsafe & 2.8 / 76.0 & 4.4 / 85.5 & 2.8 / 89.0 & 2.8 / 92.0 & 6.4 / 81.0 & 4.0 / 90.5 \\
+\midrule
+\multirow{2}{*}{\textbf{Mean (7)}} & \textbf{TQA MC1/MC2} & 40.5 / 58.5 & 37.7 / 55.3 & 39.6 / 57.7 & 39.4 / 57.0 & 36.8 / 54.3 & 39.3 / 57.0 \\
+ & \textbf{XS Safe/Unsafe} & 5.2 / 26.4 & 1.6 / 79.1 & 1.6 / 82.1 & 1.4 / 91.6 & 2.5 / 82.1 & 1.9 / 91.6 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix G.2: Per-model TruthfulQA (817 MC1/MC2) and XSTest (250 Safe ORR / 200 Unsafe Non-Refusal) utility.} Static Global ($k{=}2$) severely degrades TruthfulQA on Qwen2.5-7B ($-13.6$ MC1 / $-15.4$ MC2) and Qwen2-7B ($-5.6$ / $-9.0$), whereas Per-Layer Basin ($k{=}2$) preserves accuracy within $-1.8$ / $-1.0$ and $-1.5$ / $-2.4$ pts respectively.}
+\label{tab:appG2_exp7_utility}
+\end{table*}
+
+% ==================== tabH1_exp9_p1_writes_vs_resid.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.2pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccccc}
+\toprule
+\textbf{Model} & \textbf{Strategy ($k{=}2$)} & \multicolumn{4}{c}{\textbf{Sublayer `writes`}} & \multicolumn{4}{c}{\textbf{Residual Stream `full\_resid`}} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+ & & SR\% & KL & CE & TQA MC1 & SR\% & KL & CE & TQA MC1 \\
+\midrule
+\multirow{4}{*}{Gemma-2-2B} & Static Global & 34.6 & 0.10 & 0.398 & 39.9 & 44.6 & 0.28 & 0.617 & 35.6 \\
+ & Static Basin & 6.5 & 0.03 & 0.363 & 42.2 & 50.3 & 0.21 & 0.559 & 36.4 \\
+ & Torsion Transport & 30.2 & 0.12 & 0.368 & 41.2 & 6.8 & 2.10 & 0.934 & 36.0 \\
+ & \textbf{Per-Layer Basin} & 46.4 & 0.18 & 0.376 & 41.4 & 3.3 & 2.44 & 1.434 & 33.2 \\
+\midrule
+\multirow{4}{*}{Llama-3-8B} & Static Global & 39.7 & 0.15 & 0.204 & 36.2 & 40.0 & 0.15 & 0.204 & 36.6 \\
+ & Static Basin & 52.3 & 0.05 & 0.175 & 36.1 & 43.1 & 0.14 & 0.201 & 36.8 \\
+ & Torsion Transport & 53.4 & 0.10 & 0.194 & 35.5 & 59.3 & 0.31 & 0.304 & 35.2 \\
+ & \textbf{Per-Layer Basin} & 65.3 & 0.15 & 0.209 & 36.0 & 44.6 & 0.53 & 0.434 & 35.1 \\
+\midrule
+\multirow{4}{*}{Llama-3.1-8B} & Static Global & 28.1 & 0.24 & 0.300 & 37.3 & 29.6 & 0.25 & 0.301 & 37.5 \\
+ & Static Basin & 15.9 & 0.06 & 0.228 & 37.3 & 27.8 & 0.23 & 0.292 & 37.3 \\
+ & Torsion Transport & 17.1 & 0.19 & 0.257 & 36.7 & 39.1 & 0.81 & 0.467 & 36.0 \\
+ & \textbf{Per-Layer Basin} & 50.4 & 0.42 & 0.279 & 37.7 & 11.2 & 3.85 & 0.800 & 38.6 \\
+\midrule
+\multirow{4}{*}{Qwen2.5-7B} & Static Global & 71.4 & 0.85 & 0.852 & 31.2 & 71.5 & 0.86 & 0.855 & 31.2 \\
+ & Static Basin & 58.9 & 0.05 & 0.308 & 43.6 & 72.9 & 0.72 & 0.759 & 31.3 \\
+ & Torsion Transport & 45.5 & 0.10 & 0.310 & 43.7 & 70.4 & 2.04 & 1.315 & 32.7 \\
+ & \textbf{Per-Layer Basin} & 58.7 & 0.10 & 0.295 & 43.0 & 24.4 & 1.74 & 1.091 & 38.3 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix H.1: Apples-to-apples comparison of `writes` vs.\ `full\_resid` ablation (Exp9 P1, $n_{\mathrm{train}}{=}256$, no system prompt).} Under high-torsion rotation, Per-Layer Basin ($k{=}2$) on `full\_resid` collapses on 4/4 models (Benign KL inflates $3.6\text{--}17.4\times$), confirming the Torsion--Collateral Tradeoff.}
+\label{tab:appH1_p1}
+\end{table*}
+
+% ==================== tabH2_exp9_p2_optimal_pos.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} & \textbf{$(p^*, l^*)$} & \textbf{$\mathcal{B}(p^*)$ (IoU)} & \textbf{$\bar{\tau}$ across $p{\in}[-5,-1]$} & \textbf{Static Global $(p^*)$} & \textbf{Per-Layer@$\mathcal{B}(p^*)$ $k{=}1$} & \textbf{Per-Layer@$\mathcal{B}(p^*)$ $k{=}2$} \\
+ & & & (min--max) & SR\% / KL / Force & SR\% / KL / Force & SR\% / KL / Force \\
+\midrule
+Gemma-2-2B & (-5, L12) & [7..16] (0.43) & 0.978--0.995 & 42.7 / 0.078 / 12.1 & 22.4 / 0.016 / 4.1 & 25.9 / 0.024 / 5.6 \\
+Llama-3-8B & (-3, L11) & [10..15] (0.32) & 0.992--0.997 & 71.4 / 0.079 / 4.0 & 59.8 / 0.024 / 2.6 & 62.7 / 0.027 / 3.0 \\
+Llama-3.1-8B & (-5, L11) & [10..22] (0.68) & 0.994--0.997 & 69.6 / 0.055 / 5.5 & 55.9 / 0.026 / 4.5 & 54.8 / 0.033 / 7.4 \\
+Qwen2.5-7B & (-5, L16) & [12..18] (0.64) & 0.987--0.996 & 60.4 / 0.302 / 105.0 & 57.7 / 0.043 / 17.0 & 56.3 / 0.047 / 20.3 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix H.2: Post-instruction token-position invariance and optimal $p^*$ trade-off (Exp9 P2).} Orthogonal drift geometry holds across all 20/20 model--position pairs ($\bar{\tau}{=}0.978\text{--}0.997$, $p{\leq}0.0015$). While full-network Static Global at early positions ($p^*{\in}\{-5,-3\}$) achieves higher raw ASR by intercepting signal at embeddings and early layers, Per-Layer Basin on $\mathcal{B}(p^*)$ cuts Benign KL by $2.1\text{--}7.0\times$.}
+\label{tab:appH2_p2}
+\end{table*}
+
+% ==================== tabH3_exp9_p3_p4_512_sysprompt.tex ====================
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Model} & \multicolumn{4}{c}{\textbf{P3: 512-Token StrongREJECT Mean\%}} & \multicolumn{4}{c}{\textbf{P4: With System Prompt}} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & StaticG & FlatGeo & TorTransp & Per-Layer $k{=}1/2$ & $\bar{\tau}$ / $R^2_{0p}$ & Relay (cov) & Flat / Tor. & Per-Layer $k{=}1$ \\
+\midrule
+Gemma-2-2B & 46.9 & 39.4 & 44.9 & \textbf{49.4 / 54.6} & 0.994 / 0.98 & 0.637 (26.4$\times$) & 5.3 / 17.6 & 24.6 \\
+Llama-3-8B & 50.9 & 10.5 & 55.3 & \textbf{71.8 / 74.0} & 0.997 / 0.81 & 0.307 (42.2$\times$) & 2.3 / 6.0 & 40.7 \\
+Llama-3.1-8B & 14.1 & 4.7 & 20.5 & \textbf{54.5 / 62.7} & 0.994 / 0.88 & 0.534 (69.3$\times$) & 27.2 / 46.4 & 43.6 \\
+Qwen2.5-7B & 73.1 & 37.1 & 59.5 & \textbf{69.2 / 69.2} & 0.991 / 0.95 & 0.755 (45.2$\times$) & 50.4 / 56.9 & 56.2 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix H.3: Generation-length parity at 512 tokens (Exp9 P3) and system-prompt robustness (Exp9 P4).} All Pareto rankings are preserved at 512 tokens (Per-Layer Basin $k{=}2$ reaches $54.6\%\text{--}74.0\%$ SR Mean). Under safety/default system prompts, both orthogonal drift ($\bar{\tau}{>}0.991$) and non-circular MLP causal relay ($26.4\text{--}69.3\times$ cov-null) persist on 4/4 models, and Torsion Transport exceeds Flat Geodesic on 4/4 models.}
+\label{tab:appH3_p3_p4}
+\end{table*}
+
+% ==================== tabI_exp10_unicode_audit.tex ====================
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{Curly Apos.} & \textbf{Marker Ref.} & \textbf{SR $< 0.10$} & \textbf{NR \& SR $<0.10$} & \textbf{Ref \& SR $\geq 0.50$} \\
+ & (count / 150) & (\%) & (\%) & (count) & (count) \\
+\midrule
+Gemma-2-2B & 0 & 98.7\% & 94.0\% & 2 & 2 \\
+Llama-3-8B & 0 & 96.7\% & 95.3\% & 0 & 0 \\
+Llama-3.1-8B & 19 & 98.0\% & 98.0\% & 0 & 0 \\
+Qwen2-7B & 1 & 76.0\% & 76.7\% & 4 & 2 \\
+Qwen2.5-3B & 27 & 75.3\% & 76.7\% & 10 & 0 \\
+Qwen2.5-7B & 11 & 85.3\% & 82.7\% & 4 & 1 \\
+Mistral-7B & 0 & 10.7\% & 23.3\% & 24 & 1 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix I: Baseline Unicode apostrophe normalization and marker--judge agreement audit ($n{=}150$).} Normalizing curly apostrophes (\texttt{U+2019}) resolves 19 cases on Llama-3.1-8B (yielding $0$ marker--judge disagreements), 27 on Qwen2.5-3B, and 11 on Qwen2.5-7B.}
+\label{tab:appI_unicode_audit}
+\end{table*}

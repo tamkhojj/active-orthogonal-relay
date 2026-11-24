@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Model} & \multicolumn{4}{c}{\textbf{P3: 512-Token StrongREJECT Mean\%}} & \multicolumn{4}{c}{\textbf{P4: With System Prompt}} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & StaticG & FlatGeo & TorTransp & Per-Layer $k{=}1/2$ & $\bar{\tau}$ / $R^2_{0p}$ & Relay (cov) & Flat / Tor. & Per-Layer $k{=}1$ \\
+\midrule
+Gemma-2-2B & 46.9 & 39.4 & 44.9 & \textbf{49.4 / 54.6} & 0.994 / 0.98 & 0.637 (26.4$\times$) & 5.3 / 17.6 & 24.6 \\
+Llama-3-8B & 50.9 & 10.5 & 55.3 & \textbf{71.8 / 74.0} & 0.997 / 0.81 & 0.307 (42.2$\times$) & 2.3 / 6.0 & 40.7 \\
+Llama-3.1-8B & 14.1 & 4.7 & 20.5 & \textbf{54.5 / 62.7} & 0.994 / 0.88 & 0.534 (69.3$\times$) & 27.2 / 46.4 & 43.6 \\
+Qwen2.5-7B & 73.1 & 37.1 & 59.5 & \textbf{69.2 / 69.2} & 0.991 / 0.95 & 0.755 (45.2$\times$) & 50.4 / 56.9 & 56.2 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{Appendix H.3: Generation-length parity at 512 tokens (Exp9 P3) and system-prompt robustness (Exp9 P4).} All Pareto rankings are preserved at 512 tokens (Per-Layer Basin $k{=}2$ reaches $54.6\%\text{--}74.0\%$ SR Mean). Under safety/default system prompts, both orthogonal drift ($\bar{\tau}{>}0.991$) and non-circular MLP causal relay ($26.4\text{--}69.3\times$ cov-null) persist on 4/4 models, and Torsion Transport exceeds Flat Geodesic on 4/4 models.}
+\label{tab:appH3_p3_p4}
+\end{table*}

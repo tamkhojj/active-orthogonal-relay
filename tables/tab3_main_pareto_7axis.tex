@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Intervention (Writes)} & \textbf{SR Mean} & \textbf{NonRef} & \textbf{XS Unsafe} & \textbf{XS Safe ORR} & \textbf{TQA MC1/MC2} & \textbf{Benign $\Delta$CE} & \textbf{Force} & \textbf{Col.} \\
+ & ($\uparrow$ \%) & ($\uparrow$ \%) & ($\uparrow$ \%) & ($\downarrow$ \%) & ($\uparrow$ \%, 817 Qs) & ($\downarrow$) & ($\downarrow$) & (\%) \\
+\midrule
+Baseline & 11.5 & 22.8 & 26.4 & 5.2 & 40.5 / 58.5 & +0.000 & 0.0 & 0.0 \\
+\midrule
+Static Global ($k{=}1$) & 47.6 & 76.3 & 79.1 & 1.6 & 37.7 / 55.3 & +0.054 & 39.3 & 0.0 \\
+Static Basin ($k{=}1$) & 42.9 & 67.2 & 70.4 & 2.1 & 39.9 / 57.5 & +0.007 & 9.3 & 0.0 \\
+Flat Geodesic ($k{=}1$) & 33.4 & 69.7 & 73.6 & 1.7 & 39.9 / 58.0 & +0.021 & 11.0 & 0.0 \\
+Torsion Transport ($k{=}1$) & 46.2 & 80.0 & 82.1 & 1.6 & 39.6 / 57.7 & +0.019 & 11.0 & 0.0 \\
+\textbf{$e_3$-Only Writes} & 50.0 & 83.4 & 83.9$^\dagger$ & 1.7 & 39.9 / 57.2 & +0.010 & 14.3 & 0.0 \\
+\textbf{Per-Layer Basin ($k{=}1$)} & \textbf{54.3} & 88.0 & 91.6 & \textbf{1.4} & 39.4 / 57.0 & +0.031 & 13.5 & 0.0 \\
+\midrule
+Static Global ($k{=}2$) & 50.3 & 79.0 & 82.1 & 2.5 & 36.8 / 54.3 & +0.144 & 61.9 & 0.0 \\
+\textbf{Per-Layer Basin ($k{=}2$)} & \textbf{57.1} & 91.9 & 91.6 & 1.9 & 39.3 / 57.0 & +0.033 & 18.8 & 0.0 \\
+\bottomrule
+\end{tabular}
+}
+\caption{\textbf{7-axis safety--utility Pareto summary averaged across all 7 models (sublayer writes).} Per-Layer Basin dominates Static Global (Arditi et al., 2024) simultaneously across StrongREJECT Mean, Non-Refusal, XSTest Unsafe Non-Refusal, XSTest Safe Over-Refusal (ORR), TruthfulQA MC1/MC2, Benign $\Delta$CE, and Total Force Norm with $0.0\%$ semantic collapse. $^\dagger$Evaluated on 100 XSTest Unsafe prompts in Exp8 D3.}
+\label{tab:pareto_7axis}
+\end{table*}

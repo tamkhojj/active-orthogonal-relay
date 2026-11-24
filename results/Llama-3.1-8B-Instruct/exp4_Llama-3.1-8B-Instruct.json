@@ -1,0 +1,58 @@
+{
+  "model": "Llama-3.1-8B-Instruct",
+  "ell1": 29,
+  "k_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "k_max": 6,
+  "compensation_frac": [
+    1.3151,
+    3.2562,
+    4.1553,
+    4.6572,
+    2.5631,
+    0.0
+  ],
+  "suppression_frac": [
+    0.562,
+    0.9635,
+    1.0405,
+    0.8909,
+    0.1927,
+    0.0
+  ],
+  "random_suppression_frac": [
+    1.0763,
+    1.0755,
+    0.9243,
+    0.7462,
+    1.0546,
+    0.9835
+  ],
+  "matched_suppression_frac": [
+    1.0404,
+    1.0182,
+    0.985,
+    1.1209,
+    0.9352,
+    0.9939
+  ],
+  "compensation_peak_k": 4,
+  "compensation_peak_value": 4.657,
+  "collapse_k": 6,
+  "random_still_rebuilds_at_kmax": true,
+  "gold_asr": [
+    19.09,
+    41.63,
+    57.75,
+    58.81,
+    57.04,
+    57.95
+  ],
+  "jailbreak_knee_k": 3
+}

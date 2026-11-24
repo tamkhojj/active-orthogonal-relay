@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+__MACOSX/
+
+# Figure PDFs (PNG versions are kept for the README)
+figures/*.pdf
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.out
+*.log
+*.synctex.gz
+
+# Keep (committed for GPU-free verification): results/ (experiment JSON),
+#       tables/ (exported LaTeX), aor/data/splits + aor/data/processed (prompts)
